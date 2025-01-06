@@ -1,0 +1,50 @@
+---
+title: "Injury prevention"
+subtitle: Military Penthathlon Jørstadmoen
+format: clean-revealjs
+logo: images/FHS_3_1.png
+#css: logo.css
+title-slide-attributes: 
+  data-background-image: ""
+author:
+  - name: Sjur Fortun Øfsteng
+    orcid: 0000-0000-0000-0000
+    email: PhD | FHS/CISK
+    affiliations: sofsteng@mil.no
+date: December 11 2024
+#standalone: true
+self-contained: true
+#bibliography: bib-talk.bib
+execute: 
+  echo: false
+  warning: false
+  message: false
+editor_options: 
+  
+  chunk_output_type: console
+---
+
+
+
+## Test 1
+
+
+## Test 2
+
+
+- New slides
+
+- New slides
+    - extra slide
+
+- New slides
+
+::: {.notes}
+
+bla bla bla
+
+:::
+
+
+
+
