@@ -1,0 +1,57 @@
+---
+title: "Educational program"
+subtitle: Military Pentathlon Jørstadmoen
+format: clean-revealjs
+logo: images/double-logo.png
+#css: logo.css
+title-slide-attributes: 
+  data-background-image: ""
+author:
+  - name: Sjur Fortun Øfsteng | PhD
+    orcid: 0000-0000-0000-0000
+    email: Norwegian Defence Cyber Academy
+    affiliations: sofsteng@mil.no
+date: September 20 2025
+#standalone: true
+self-contained: true
+bibliography: bib/references.bib
+execute: 
+  echo: false
+  warning: false
+  message: false
+editor_options: 
+  
+  chunk_output_type: console
+---
+
+
+## Welcome
+
+
+## Educational program
+
+
+## The educational program framework
+
+- Cadet centered learning
+
+- Active learning facilitates deeper understanding of the topics
+
+- Preparation --> Discussion --> Perform a part of the practical session
+
+
+## Learning outcomes
+
+The cadet has knowledge of:  
+
+- the effect of warm up on injury prevention and athletic performance
+
+- the military work demands and link to the military pentathlon
+
+- concurrent training in developing physical capacities
+
+- optimizing performance
+
+
+
+

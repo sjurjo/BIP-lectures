@@ -1,20 +1,20 @@
 ---
-title: "Injury prevention"
-subtitle: Military Penthathlon Jørstadmoen
+title: "Injury prevention strategies"
+subtitle: Military Pentathlon Jørstadmoen 2025
 format: clean-revealjs
-logo: images/FHS_3_1.png
+logo: images/double-logo.png
 #css: logo.css
 title-slide-attributes: 
   data-background-image: ""
 author:
-  - name: Sjur Fortun Øfsteng
+  - name: Sjur Fortun Øfsteng | PhD
     orcid: 0000-0000-0000-0000
-    email: PhD | FHS/CISK
+    email: Norwegian Defence Cyber Academy
     affiliations: sofsteng@mil.no
-date: December 11 2024
+date: September 20 2025
 #standalone: true
 self-contained: true
-#bibliography: bib-talk.bib
+bibliography: bib/references.bib
 execute: 
   echo: false
   warning: false
@@ -24,27 +24,827 @@ editor_options:
   chunk_output_type: console
 ---
 
+```{r}
+library(tidyverse)
+library(ggplot2)
+```
 
 
-## Test 1
+
+## Flipped classrom approach
+1- 10-15 min digital lecture + assignment  
+2- in class - key points + group discussions related to injury prevention strategies  
+3- out class - example session made by and for the cadets
+
+# Welcome to this module
+
+- Outline:
+    - Who I am?
+    - Purpose of this module
+    - Our expectations to you
+    - How the working module is organized
+    - From the virtual to the redidental part
+    
 
 
-## Test 2
+
+## How do you avoid getting injuried during service?
+
+Start the lecture with a question or case.
+
+- What is your strategy(ies) to prevent getting injured while in the military service? 
+
+  - Use two minutes to discuss with your fellow cadet
 
 
-- New slides
 
-- New slides
-    - extra slide
+## Overview of lecture
 
-- New slides
+1\. Acute vs. overuse injuries  
+2\. Which strategies do we have?  
+3\. Warm-up as a strategy  
+4\. Warm-up mechanisms  
+5\. Warm-up in sport to prevent injuries  
+6\. For the throwing athlete / soldier  
+7\. Warm up to improve performance  
+8\. Take home and assignment  
+  - Your school-team will execute this warm-up program during the residential stay
 
 ::: {.notes}
 
-bla bla bla
+
+:::
+
+## Injures in the armed forces
+
+- Training-related injuries 
+  - Injuries results in five to 22 times more days of limited duty than illnesses [@knapik_2004]
+
+- Physical training is a primary cause and risk factor for musculoskeletal injuries [@wardle_2017]
+
+::: {.notes}
+
+- yet developing and maintaining physical capability is a critical aspect of military training and employment
+
+- acquiring and maintaining a high level of physical fitness (endurance, strength), is necessary for successful perofrmance of military-specific tasks during training and operations
+
+- mitigation strategies for MSKI therefore include, but are not limited to, optimising PT and injury prevention
+
+- but first, let us look into what is an injury
 
 :::
 
 
 
+## Injuries {.smaller}
+
+::: {.panel-tabset}
+
+### Acute injures
+
+- An acute injury is a sudden injury that occurs at a specific, identifiable moment, usually with a clear and defined cause
+
+- It results directly from tissue damage when the affected tissue is unable to withstand the load or force applied to it
+
+::: {#injury layout-ncol=2}
+
+![](images/solinj.jpg)
+
+
+![](images/foot.png)
+:::
+
+
+### Overuse injuries
+
+```{r injury}
+#| echo: false
+#| fig-width: 6.5
+#| fig-height: 6.0
+
+# Create a data frame with some points
+data <- data.frame(
+  x = c(-4, -3, -2, -1.5, -1, 0, 1, 2, 3, 4, 5),
+  y = c(-6, -3.5, -4, -1, -2, 8, 4, 5, 3, 2, -4),
+  yy = c(-6, -3.5, -4, -1, -2, 8, 4, 5, 3, 2, -4)
+)
+
+# Create a basic coordinate system and plot the points
+ggplot(data, aes(x = x, y = y)) + 
+  geom_point(size = 3, color = "blue") +  # Plot points
+  geom_line() +
+    scale_y_continuous(
+    # Features of the first axis
+    name = "Tissue damage",
+    # Add a second axis and specify its features
+    sec.axis = sec_axis(trans=~.*10, name="Pain perception")
+  ) +
+   
+  geom_vline(xintercept=0,
+                linetype=4, colour="red")+
+  geom_hline(yintercept=0,
+                linetype=4, colour="red") +
+  
+annotate("text", x=-2.5, y=-6, label= "Period with overuse") +
+  annotate("text", x=-2.5, y=-0.5, label= "Periods with failed\n tissue adaptations") +
+  
+    geom_curve(aes(x = -4, y = -0.8, xend = -2, yend = -1),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = 0.3) +
+  
+   geom_curve(aes(x = -4, y = -0.8, xend = -3, yend = -3),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = 0.3) +
+  
+  
+    annotate("text", x=2.5, y=8.5, label= "Time of experienced injury\n Loss of duty time") +
+  
+     geom_curve(aes(x = 2.5, y = 7.8, xend = 0.3, yend = 8),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = -0.3) +
+  
+    annotate("text", x=3.2, y=7., label= "RTP / Return to duty attempt") +
+    geom_curve(aes(x = 2.8, y = 6.8, xend = 2.3, yend =5),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = -0.3) +
+  
+    annotate("text", x=2.8, y=-2.0, label= "RTP / Return to duty") +
+    geom_curve(aes(x = 2.8, y = -2.8, xend = 4.8, yend =-4.2),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = 0.3) +
+  
+  
+    annotate("text", x=-3.0, y=5.4, label= "Increased perception\n of pain") +
+  
+    geom_curve(aes(x = -3.0, y = 5.0, xend = -0.8, yend =2.2),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = 0.3) +
+  
+  
+  labs(title = "Overuse injury",
+       x = "Time (weeks/months)",
+       y = "Tissue damage") +  # Add labels
+  theme_classic() + # Use a minimal theme
+theme(axis.text.x = element_blank(),
+      axis.text.y = element_blank(),
+      #axis.title.x = element_text(size=4),
+      plot.title = element_blank())
+  
+
+```
+
+:::
+
+::: {.notes}
+
+:::
+
+
+## Armed forces injury prevention
+### Startegies to prevent injuries in military personel
+
+
+1\. Education of military leaders  
+  
+2\. Prevent overtraining (training planing)  
+  - individualized training program
+  - train smarter? reduce training volume while maintaining physical fitness and reduce injury rates
+  
+3\. Warm-up strategies  
+
+4\. 
+
+
+![](images/mili-lec.jpg){.absolute bottom=0 right=-50 height="250"}
+
+
+[@wardle_2017]
+
+## Injury prevetion strategies
+
+::: {.r-stack}
+
+::: {.fragment}
+
+
+```{r strat1}
+#| out-width: 100%
+
+
+# Load necessary libraries
+library(magick)
+
+# Read the image
+tabrec <- image_read("images/table-rec.png")
+
+# Define the coordinates and radius for the circles
+circles <- data.frame(
+  x = c(100),  # x-coordinates of the centers
+  y = c(180),  # y-coordinates of the centers
+  r = c(55)      # radii of the circles
+)
+
+# Draw circles on the image
+for (i in 1:nrow(circles)) {
+  tabrec <- image_draw(tabrec)
+  symbols(circles$x[i], circles$y[i], circles$r[i], inches = FALSE, add = TRUE, fg = "red")
+  dev.off()
+}
+
+# Display the image
+
+tabrec
+
+```
+:::
+
+::: {.fragment}
+
+```{r strat2}
+#| out-width: 100%
+
+circles2 <- data.frame(
+  x = c(100, 100),  # x-coordinates of the centers
+  y = c(180, 300),  # y-coordinates of the centers
+  r = c(55, 55)      # radii of the circles
+)
+
+# Draw circles on the image
+for (i in 1:nrow(circles2)) {
+  tabrec <- image_draw(tabrec)
+  symbols(circles2$x[i], circles2$y[i], circles2$r[i], inches = FALSE, add = TRUE, fg = "red")
+  dev.off()
+}
+
+# Display the image
+tabrec
+
+
+
+```
+:::
+
+::: {.fragment}
+```{r strat3}
+#| out-width: 100%
+
+circles3 <- data.frame(
+  x = c(100, 100, 100),  # x-coordinates of the centers
+  y = c(180, 300, 420),  # y-coordinates of the centers
+  r = c(55, 55, 55)      # radii of the circles
+)
+
+# Draw circles on the image
+for (i in 1:nrow(circles3)) {
+  tabrec <- image_draw(tabrec)
+  symbols(circles3$x[i], circles3$y[i], circles3$r[i], inches = FALSE, add = TRUE, fg = "red")
+  dev.off()
+}
+
+# Display the image
+tabrec
+
+
+
+```
+
+:::
+
+:::
+
+Table from @wardle_2017 review
+
+::: {.notes}
+
+- knowledge of physical fitness, supervision of injury prevention strategies are important for prevention for injury
+- important for making an appropriate training plan that accounts for soldiers multifactorial stress components, that may lead to overtraining and risk for muscloskeletal injuries.
+
+reducing physical training volume in the initial military training may benefit the soldier. A progressive load on soldiers body, may reduce development of overuse injuries.
+
+:::
+
+# Mechanisms of Warm-up
+
+## Mechanisms of Warm-up
+
+```{r intro, message=FALSE, echo=FALSE, warning=FALSE}
+# Load necessary libraries
+library(magick)
+library(ggplot2)
+
+# Read the image
+image <- image_read("images/frontimage.jpg")
+
+# Create an arrow annotation
+arrow <- image_draw(image)
+arrows(x0 = 570, 
+       x1 = 750,
+       y0 = 450, 
+       y1 =450, 
+       length = 0.25, lwd=7, angle = 30, code = 1, col="pink")
+arrows(x0 = 540, 
+       x1 = 750,
+       y0 = 200, 
+       y1 =450, 
+       length = 0.25, lwd=7, angle = 30, code = 1, col="pink")
+arrows(x0 = 510, 
+       x1 = 750,
+       y0 = 550, 
+       y1 = 450, 
+       length = 0.25, lwd=7, angle = 30, code = 1, col="pink")
+dev.off()
+
+
+arrow
+
+# Save the annotated image
+#image_write(image_with_text, path = "images/CISK_arr.png")
+
+```
+
+
+
+
+## Mechanisms of Warm-up
+
+::: {.r-stack}
+
+:::{.fragment}
+
+```{r 1}
+#| out-width: 100%
+
+wup <- image_annotate(arrow, "Possible warm-up mechanisms", size = 30, color = "pink", location = "+750+400") 
+
+wup
+
+```
+:::
+
+:::{.fragment}
+```{r 2}
+#| out-width: 100%
+
+ wup |> 
+  image_annotate("Muscle temperature", size = 30, color = "white", location = "+550+450") 
+
+```
+:::
+
+:::{.fragment}
+```{r 3}
+#| out-width: 100%
+
+ wup |>
+  image_annotate("Muscle temperature", size = 30, color = "white", location = "+550+450") |> 
+  image_annotate("Oxygen kinetics", size = 30, color = "white", location = "+550+120") 
+
+```
+
+:::
+
+:::{.fragment}
+```{r 4}
+#| out-width: 100%
+
+ wup |>
+  image_annotate("Muscle temperature", size = 30, color = "white", location = "+550+450") |> 
+  image_annotate("Oxygen kinetics", size = 30, color = "white", location = "+550+120") |> 
+  image_annotate("Muscle contractile performance", size = 30, color = "white", location = "+550+550")
+
+
+```
+
+:::
+
+:::{.fragment}
+```{r 5}
+#| out-width: 100%
+
+ wup |>
+  image_annotate("Muscle temperature", size = 30, color = "white", location = "+550+450") |> 
+  image_annotate("Oxygen kinetics", size = 30, color = "white", location = "+550+120") |> 
+  image_annotate("Muscle contractile performance", size = 30, color = "white", location = "+550+550") |> 
+  image_annotate("ATP turn over rate", size = 30, color = "white", location = "+250+500") 
+
+
+```
+
+:::
+
+:::
+
+[@mcgowan_2015]
+
+::: {.notes}
+
+- Theory: an increase in muscle temperature of $\text{1 }^{\circ}\text{C}$ can enhance subsequent exercise performance by 2-5% [@racinais_2010].
+
+In zochowski 2007
+- Enhanced performance has been associated with vasodilation of muscle blood vessels and the associated rightward shorth og hte oxyhemoglobin-dissociation curve after warm-up.
+- Hemoglobin gives up almost twice as much oxygen at $\text{41 }^{\circ}\text{C}$ as at $\text{36 }^{\circ}\text{C}$, and oxygen dissociates twice as rapidly.
+- Improves central-nervous-system function (p 202)
+- Warm-up can allow subsequent tasks to begin with an elevated baseline $\text{VO}_{2}$. Resulting in less of the initial work is completed anaerobically.
+
+:::
+
+
+
+## Armed forces injury prevention
+### Warm-up strategies
+
+- Dynamic warm up should include agility, plyometrics, power, cora and balance
+- These components enhance muscle flexibility, joint mobility, and neuromuscular activation, which is essential for optimal injury prevention
+
+
+::: {.notes}
+
+- Has a substantial impact of the readiness of the force
+- Due to the amount of limited duty time they cause
+
+
+
+:::
+
+
+## Implementation of warm-up i sports {.smaller}
+### Movements
+
+- Rapid movement exercises
+
+- Six different sets of exercise (fotbal)  
+1\ slow runing with moveemnts  
+2\ strength - plyometrics and balance (10 min)  
+3\ speed running specific to football (sudden changes/direction)  
+
+
+Outcome:
+
+Lower risk of injuries overall, overuse injures and severe injuries in the intervention group
+
+*Can reduce the risk of injury with 50% *
+
+[@soligard_2008;@kirkendall_2010]
+
+
+::: {.notes}
+
+- plank, side plank, nordic hamstring, single leg balance
+- jumping exercise
+- fast runing exercises
+
+:::
+
+
+
+
+
+
+## Warm-up
+
+- General warm-up
+- Specific warm-up
+
+- Stretching
+
+- For subsequent training exercises
+
+- Transition phase (15 min sprint performance)
+ 
+**[injury prevetnion vs. performance enhancing effect]**
+
+
+
+
+# Warm-up For Injury and Performance Enhancement
+
+## Warm-up
+### Active warm up
+
+
+- Warm-up for subsequent exercise performance 
+
+- Elevation of oxygen uptake kinetics
+  - Baseline VO_2 may be elevated in response the priming exercise
+  - Transition phase should not exceed 10 min
+  - May lead to an initial sparing of persons anaerobic stores, preserving this energy for subsequent use
+
+
+## Passive Warm-Up
+
+
+ 
+## Implementation of warm-up i sports
+### The throwing athlete - movement demand
+
+:::: {.columns}
+
+::: {.column width="50"}
+
+- Having a greater flexibility in external rotation can benefit the throwing performance
+
+- However, excessive stretching can exacerbate capsule laxity and lead to shoulder instability
+
+ - Stretching together with repetitive throwing motions with extreme external rotation can lead to capsular instability and injury (labrum and rotator cuff muscles)
+    
+
+:::
+
+
+::: {.column width="50"}
+
+::: {.r-stack}
+
+
+![](images/shoulder-bio-0.png){.fragment  .absolute height="600" right=30 .fade-in-then-out}
+
+
+
+
+![](images/shoulder-bio.png){.fragment .absolute height="600" right=30}
+
+![](images/shoulder-bio-1.png){.fragment .absolute height="600" right=30}
+
+![](images/shoulder-bio-soldier.png){.fragment .absolute height="600" right=-360}
+
+
+:::
+:::
+
+
+::::
+
+
+## Implementation of warm-up i sports {.smaller}
+### The throwing athlete - soldier
+
+:::: {.columns}
+
+::: {.column width="50%"}
+    
+**How can we circumvent this throwing paradox?**
+
+- Increasing the range of motion elsewhere in the chain?
+
+- Increasing thoracic spine mobility in extension and rotation
+- Eliminates the excessive glenohumeral external rotation range of motion
+- Which avoids stress on the anterior capsule laxitiy and stress on bicpes brachii tendon (long head)
+
+
+[@mayes_2022]
+
+:::
+
+
+::: {.column width="50%"}
+
+![](images/shoulder-bio-soldier.png){.fragment .absolute height="500" top=100 right=-260}
+
+
+
+:::
+
+
+::::
+
+::: {.notes}
+
+
+:::
+
+## Implementation of warm-up i sports
+### The throwing athlete / soldier
+
+
+![](images/shoulder_3.png)
+
+::: {.notes}
+
+- 
+
+:::
+
+## Implementation of warm-up i sports
+### The throwing athlete / soldier
+
+
+![](images/shoulder_2.png)
+
+
+::: {.notes}
+
+- The late cocking phase prepared the arm for forward acceleration and subsequent ball release
+
+:::
+
+## Implementation of warm-up i sports
+### The throwing athlete 
+
+How does a proper warm-up session look like for an throwing athlete
+
+- Prevent pain and injury
+
+- Program should encompass
+    - thoracic spoine mobility exercises 
+    - facilitate shoulder stabilizers trapezius, rotator cuff muscles, scapula stabilizers (m. trapezius)
+    - warm-up reduces risk on injury in all phases of a throw
+
+
+
+# Warm-up and the link to performance
+
+## Mechanisms of Warm-up
+
+### Accociation to performance
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+An increase in muscle temperature of $\text{1}^{\circ}\text{C}$ can enhance subsequent exercise performance by [2-5%]{.bg style="--col: pink"}  [@racinais_2010].
+:::
+
+::: {.column width="50%"}
+
+
+![](images/corr-temp-per.png)
+
+
+```{r corr plot}
+#| fig-width: 6.0
+#| fig-height: 10.0
+
+# Read the image
+corr_plot <- image_read("images/corr-temp-per.png")
+
+
+
+```
+
+:::
+
+::::
+
+::: {.notes}
+
+-
+
+:::
+
+## Mechanisms of Warm-up {.smaller}
+
+### Accociation to performance
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+6 males (mean age 25) 
+Cross-over design - separated by 14 days.
+
+6 sec maximal sprint on a cycle ergometer
+
+First meeting
+- Pre warmed thigh muscles in bath ($\text{42.8}^{\circ}\text{C}$) for 30 min.
+
+Second meeting
+- normal condition
+
+::: {.fragment .custom .blur}
+Results:
+Pre warmed to $\text{37.5}^{\circ}\text{C}$ vs. normal condition $\text{34}^{\circ}\text{C}$
+
+Performance at the sprints:  
+Mean power output: **971 W vs. 859 W**
+:::
+
+:::
+
+::: {.column width="50%"}
+
+![](images/poweroutput6sec.png){.absolute  height="600" top=100 right=60}
+
+:::
+
+::::
+
+::: {.notes}
+
+Mean power output during the sprint was greater in the pre warm group compared to the normal condition group
+
+Probably due to the elevated temperature improves cross-bridge cycling between actin and myosin proteins in the muscle cell.
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Warm-up for performance {.smaller}
+### Swimming
+
+- Pooled based warm-ups vs. dry-land-based warm-ups
+    - Performance? 
+    
+- Active vs. no warm-up  
+    - Faster [] and similar [] performance after 1000 m pooled-based
+
+- Race-pace effort during warm-up (prime swimmers)
+    - Faster 50m split times []
+
+    
+## Warm-up for performance {.smaller}
+### Swimming
+
+- Transition phase
+    - Often long time between active warm-up and competition (often >20 min)
+    
+- Shorter transition phase (10vs. 45 min) is associated with better performance (200m) [@zochowski_2007]
+
+    - Maintain elevated core temperature
+    
+- What to to?
+    - Should complete between 500 - 1200 m
+    - Include a short race pace efforts towards the end of of their pool warm-up
+
+
+::: {.notes}
+
+1. Coaches believe that this is superior as it is gaining a feel for the water
+
+2. However, this is not the case. Both methods can enhance swimming performance
+
+3. 
+
+4. Dry-land activities can be a nice alternative to maintain elevated body core temperature
+
+
+:::
+
+
+## Take home for injury prevention
+
+- Education of military leaders:
+  - Training load and intensity planing (total training load)  
+  - Resistance training  
+
+- Warm-up strategies
+    - Injury
+    - Improve performance
+    
+- Mobility exercises?
+    
+  
+::: {.notes}
+
+Start with a case, problem,  
+Set the stage  
+And ask how would the students think of this in the light of this lecture, 
+alternative, illustrate how experts in this field would think about it  
+
+:::
+
+## Assignment for residental stay
+
+Assignments for the delegations that needs to be prepared
+
+- [Romanian Cadets:]{.bg style="--col: yellow"} make a warm-up session for 30 min that prepare the fellow cadets for the obstacle course
+
+- [Greece cadets:]{.bg style="--col: lightblue"} make a warm-up session for 30 min that prepare the fellow cadets for grenade throw
+
+- [Latvian cadets:]{.bg style="--col: darkred"}  make a warm-up session for 30 min that prepare the fellow cadets for the obstacle course
+
+- [Bulgarian cadets:]{.bg style="--col: darkgreen"} make a warm-up session for 30 min that prepare the fellow cadets for the obstacle course
+
+
+
+
+## References
 

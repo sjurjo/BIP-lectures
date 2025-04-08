@@ -1,0 +1,52 @@
+---
+title: "Injury prevention strategies"
+subtitle: The art of warming up
+format: clean-revealjs
+logo: images/double-logo.png
+#css: logo.css
+title-slide-attributes: 
+  data-background-image: ""
+author:
+  - name: Sjur Fortun Øfsteng | PhD
+    orcid: 0000-0000-0000-0000
+    email: Norwegian Defence Cyber Academy
+    affiliations: sofsteng@mil.no
+date: September 20 2025
+#standalone: true
+self-contained: true
+#bibliography: bib-talk.bib
+execute: 
+  echo: false
+  warning: false
+  message: false
+editor_options: 
+  
+  chunk_output_type: console
+---
+
+
+
+
+## Strategies 
+
+- Resistance training  
+    - reduce overuse injuries with 50%
+
+- Adjust equipment  
+
+- Injury prevention training / basic training
+
+- Warm up sessions:
+- Soligard, Myklebust, 2008
+
+
+
+
+
+
+
+
+
+
+
+

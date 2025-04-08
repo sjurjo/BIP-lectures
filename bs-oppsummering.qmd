@@ -1,0 +1,133 @@
+---
+title: "Drøfting av BS"
+subtitle: Ønsker litt innsikt i BS sin læringsstrategi og ditt utbytte
+format: clean-revealjs
+logo: images/double-logo.png
+#css: logo.css
+title-slide-attributes: 
+  data-background-image: ""
+author:
+  - name: Sjur Fortun Øfsteng | PhD
+    orcid: 0000-0000-0000-0000
+    email: Norwegian Defence Cyber Academy
+    affiliations: sofsteng@mil.no
+date: March 21 2025
+#standalone: true
+self-contained: true
+bibliography: bib/references.bib
+execute: 
+  echo: false
+  warning: false
+  message: false
+editor_options: 
+  
+  chunk_output_type: console
+---
+
+
+
+## Gjennomføring av BS V77
+### Kadett Lukas med mere
+
+
+
+- Fordeling av undervisningsmengde (xlsx-fil)
+
+::: {.fragment}
+
+- Hvordan var forholdet mellom teoretisk leksjoner og praksis lagt opp?
+
+- Egen teoriundervisning?
+- Teori i forbindelse med praksisøkter (før/etter - refleksjoner)?
+
+:::
+
+::: {.notes}
+
+- Hadde dere ansvar for å gjennomføre noen økter?
+
+:::
+
+
+## Læringsmål som er beskrevet
+
+Ha kunnskap:  
+
+  - treningsplanlegging for militært personell (hva og hvordan presentert?)
+
+::: {.fragment}  
+
+  - effektive treningsmetoder for å utvikle STR - END? (hva og hvordan presentert?)
+
+:::
+
+::: {.fragment}
+
+- Ha kunnskap om skadeforekomst i forsvaret og skadeforebygging?
+
+:::
+
+
+
+::: {.fragment}
+- Kunnskap og planlegging, gjennomføring og veiledning av leksjoner og treningsøkter
+  - ved bruk av Pedagogiske prinsipper
+  - ved bruk av undervisningslære
+
+:::
+
+
+::: {.notes}
+
+Hvordan ble denne undervisnignen lagt opp og lagt frem?
+
+:::
+
+
+## Læringsaktiviteter
+
+- Forelesninger, seminar, gruppe, presentasjoner
+- Problembasert oppgaver?
+- Caser?
+
+
+## Vurderingsform
+
+- Hvordan ble dere **vurdert** om dere oppnådde læringsmålene i kunnskap og ferdigheter?
+
+
+- Kan **anvende kunnskap** om treningsmetoder, kapasitets og arbeidskravsanalyse for å påvirke fysisk hardførhet....
+
+- Kan **anvende kunnskap** om treningsplanlegging og trening for å sikre fremgang med lav risiko for overtrening og skader
+
+
+
+
+
+
+## Veien videre
+
+- Blitt mer selvstendige?
+
+- Trygg på treningsplanlegging og anvende treningsprinsipper for å oppnå noen mål?
+
+- Trygg i rollen som trener for deg selv og andre? (Anvende kunnskapen)
+
+- 
+
+
+::: {.notes}
+
+Hvis jeg legger opp en økt med fokus
+
+- kan dere lage mål: utholdenhet, maks styrke, skadeforebygging
+- metode (treningsprinsipper)
+- hvorfor?
+
+
+:::
+
+
+
+
+
