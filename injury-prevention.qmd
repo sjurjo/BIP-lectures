@@ -2,6 +2,7 @@
 title: "Injury prevention strategies"
 subtitle: Military Pentathlon Jørstadmoen 2025
 format: clean-revealjs
+theme: sky
 logo: images/double-logo.png
 #css: logo.css
 title-slide-attributes: 
@@ -48,7 +49,7 @@ library(ggplot2)
 
 
 
-## How do you avoid getting injuried during service?
+## How do you avoid getting injured during service?
 
 Start the lecture with a question or case.
 
@@ -75,10 +76,12 @@ Start the lecture with a question or case.
 
 :::
 
-## Injures in the armed forces
+# Injuries in the armed forces
 
-- Training-related injuries 
-  - Injuries results in five to 22 times more days of limited duty than illnesses [@knapik_2004]
+## Injuries in the armed forces
+### Training-related injuries 
+
+- Injuries results in five to 22 times more days of limited duty than illnesses [@knapik_2004]
 
 - Physical training is a primary cause and risk factor for musculoskeletal injuries [@wardle_2017]
 
@@ -95,12 +98,11 @@ Start the lecture with a question or case.
 :::
 
 
-
-## Injuries {.smaller}
+## Definition of injuries {.smaller}
 
 ::: {.panel-tabset}
 
-### Acute injures
+### Acute injuries
 
 - An acute injury is a sudden injury that occurs at a specific, identifiable moment, usually with a clear and defined cause
 
@@ -207,12 +209,26 @@ theme(axis.text.x = element_blank(),
 
 :::
 
+::: {.fragment}
+
+["Too much, too soon, and with too little rest"]{.bg style="--col: pink"}
+
+:::
+
 ::: {.notes}
+
+overuse injures are the most prevelent cause of all sports related injuries also in the military context
+
+Injuries that is gradually developing as a consequence of overuse over time
+Related to duration, intensity and frequency of training
+And the training load is greater than tissues ability to adapt over time
+
+It is often related to monotonomy loading pattern, or repetitive movements like throwing in sports or military force
 
 :::
 
 
-## Armed forces injury prevention
+## Armed forces injury prevention {visibility="hidden"}
 ### Startegies to prevent injuries in military personel
 
 
@@ -232,7 +248,7 @@ theme(axis.text.x = element_blank(),
 
 [@wardle_2017]
 
-## Injury prevetion strategies
+## Injury prevetion strategies for military personel
 
 ::: {.r-stack}
 
@@ -331,9 +347,16 @@ Table from @wardle_2017 review
 - knowledge of physical fitness, supervision of injury prevention strategies are important for prevention for injury
 - important for making an appropriate training plan that accounts for soldiers multifactorial stress components, that may lead to overtraining and risk for muscloskeletal injuries.
 
-reducing physical training volume in the initial military training may benefit the soldier. A progressive load on soldiers body, may reduce development of overuse injuries.
+reducing physical training volume in the **initial** military training may benefit the soldier. A progressive load on soldiers body, may reduce development of overuse injuries.
+
+
+
 
 :::
+
+--- Fortsett med bakgrunn, make it brief
+
+
 
 # Mechanisms of Warm-up
 
@@ -450,6 +473,16 @@ wup
 
 ::: {.notes}
 
+
+1. Main event of warm-up is the increase in body and muscle temprature, wherein higher temperature facilitaate work more effectively such as greater muscle metabolism (by greater turnover rate of energy packages in the muscle). 
+
+
+2. With a greater muscle temperature an increase in power output is observed through as the rate of force development increases due to an optimized cross-bridge cycling rate.
+
+3. O2-kinetics: warm-up can prime the body to an elevated oxygen uptake and aerobic metabolisms can contribute to spare finite anaerobic stores during the initial stages of an exercise bout, thus preserving this energy for subsequent use. 
+
+
+
 - Theory: an increase in muscle temperature of $\text{1 }^{\circ}\text{C}$ can enhance subsequent exercise performance by 2-5% [@racinais_2010].
 
 In zochowski 2007
@@ -462,7 +495,11 @@ In zochowski 2007
 
 
 
+
+# Injury prevention
+
 ## Armed forces injury prevention
+
 ### Warm-up strategies
 
 - Dynamic warm up should include agility, plyometrics, power, cora and balance
@@ -544,6 +581,16 @@ Lower risk of injuries overall, overuse injures and severe injuries in the inter
 
 ## Passive Warm-Up
 
+
+- Not commonly used
+
+- Seems to only be a meaningfull advantage to *maintain* an elevated body temperature (achieved by active movements) throughout the transition phase
+
+::: {.notes}
+
+- that you may experience in competition where there is some time between warm-up and competition
+
+::: 
 
  
 ## Implementation of warm-up i sports
@@ -663,7 +710,10 @@ How does a proper warm-up session look like for an throwing athlete
 
 
 
+
+
 # Warm-up and the link to performance
+
 
 ## Mechanisms of Warm-up
 
@@ -711,19 +761,19 @@ corr_plot <- image_read("images/corr-temp-per.png")
 
 ::: {.column width="50%"}
 
-6 males (mean age 25) 
+6 males (mean age 25)  
 Cross-over design - separated by 14 days.
 
 6 sec maximal sprint on a cycle ergometer
 
-First meeting
-- Pre warmed thigh muscles in bath ($\text{42.8}^{\circ}\text{C}$) for 30 min.
+*First meeting*  
+- Pre warmed thigh muscles in a bath ($\text{42.8}^{\circ}\text{C}$) for 30 min.
 
-Second meeting
+*Second meeting*  
 - normal condition
 
 ::: {.fragment .custom .blur}
-Results:
+Results:  
 Pre warmed to $\text{37.5}^{\circ}\text{C}$ vs. normal condition $\text{34}^{\circ}\text{C}$
 
 Performance at the sprints:  
@@ -744,7 +794,7 @@ Mean power output: **971 W vs. 859 W**
 
 Mean power output during the sprint was greater in the pre warm group compared to the normal condition group
 
-Probably due to the elevated temperature improves cross-bridge cycling between actin and myosin proteins in the muscle cell.
+Probably due to the elevated temperature improves **cross-bridge cycling between actin and myosin proteins in the muscle cell**.
 
 :::
 
@@ -839,7 +889,7 @@ Assignments for the delegations that needs to be prepared
 
 - [Greece cadets:]{.bg style="--col: lightblue"} make a warm-up session for 30 min that prepare the fellow cadets for grenade throw
 
-- [Latvian cadets:]{.bg style="--col: darkred"}  make a warm-up session for 30 min that prepare the fellow cadets for the obstacle course
+- [Latvian cadets:]{.bg style="--col: darkred"}  make a warm-up session for 30 min that prepare the fellow cadets for the swimming course
 
 - [Bulgarian cadets:]{.bg style="--col: darkgreen"} make a warm-up session for 30 min that prepare the fellow cadets for the obstacle course
 
