@@ -23,6 +23,9 @@ execute:
 editor_options: 
   
   chunk_output_type: console
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
 ```{r}
@@ -30,92 +33,91 @@ library(tidyverse)
 library(ggplot2)
 ```
 
-
-
 ## Flipped classrom approach
-1- 10-15 min digital lecture + assignment  
-2- in class - key points + group discussions related to injury prevention strategies  
+
+1- 10-15 min digital lecture + assignment\
+2- in class - key points + group discussions related to injury
+prevention strategies\
 3- out class - example session made by and for the cadets
 
 # Welcome to this module
 
-- Outline:
-    - Who I am?
-    - Purpose of this module
-    - Our expectations to you
-    - How the working module is organized
-    - From the virtual to the redidental part
-    
-
-
+-   Outline:
+    -   Who I am?
+    -   Purpose of this module
+    -   Our expectations to you
+    -   How the working module is organized
+    -   From the virtual to the redidental part
 
 ## How do you avoid getting injured during service?
 
 Start the lecture with a question or case.
 
-- What is your strategy(ies) to prevent getting injured while in the military service? 
+-   What is your strategy(ies) to prevent getting injured while in the
+    military service?
 
-  - Use two minutes to discuss with your fellow cadet
-
-
+    -   Use two minutes to discuss with your fellow cadet
 
 ## Overview of lecture
 
-1\. Acute vs. overuse injuries  
-2\. Which strategies do we have?  
-3\. Warm-up as a strategy  
-4\. Warm-up mechanisms  
-5\. Warm-up in sport to prevent injuries  
-6\. For the throwing athlete / soldier  
-7\. Warm up to improve performance  
-8\. Take home and assignment  
-  - Your school-team will execute this warm-up program during the residential stay
+1\. Acute vs. overuse injuries\
+2. Which strategies do we have?\
+3. Warm-up as a strategy\
+4. Warm-up mechanisms\
+5. Warm-up in sport to prevent injuries\
+6. For the throwing athlete / soldier\
+7. Warm up to improve performance\
+8. Take home and assignment\
+- Your school-team will execute this warm-up program during the
+residential stay
 
-::: {.notes}
-
-
+::: notes
 :::
 
 # Injuries in the armed forces
 
 ## Injuries in the armed forces
-### Training-related injuries 
 
-- Injuries results in five to 22 times more days of limited duty than illnesses [@knapik_2004]
+### Training-related injuries
 
-- Physical training is a primary cause and risk factor for musculoskeletal injuries [@wardle_2017]
+-   Injuries results in five to 22 times more days of limited duty than
+    illnesses [@knapik_2004]
 
-::: {.notes}
+-   Physical training is a primary cause and risk factor for
+    musculoskeletal injuries [@wardle_2017]
 
-- yet developing and maintaining physical capability is a critical aspect of military training and employment
+    -   Recruits more vulnerable for injuries
 
-- acquiring and maintaining a high level of physical fitness (endurance, strength), is necessary for successful perofrmance of military-specific tasks during training and operations
+::: notes
+-   yet developing and maintaining physical capability is a critical
+    aspect of military training and employment
 
-- mitigation strategies for MSKI therefore include, but are not limited to, optimising PT and injury prevention
+-   acquiring and maintaining a high level of physical fitness
+    (endurance, strength), is necessary for successful perofrmance of
+    military-specific tasks during training and operations
 
-- but first, let us look into what is an injury
+-   mitigation strategies for MSKI therefore include, but are not
+    limited to, optimising PT and injury prevention
 
+-   but first, let us look into what is an injury
 :::
-
 
 ## Definition of injuries {.smaller}
 
-::: {.panel-tabset}
-
+:::: panel-tabset
 ### Acute injuries
 
-- An acute injury is a sudden injury that occurs at a specific, identifiable moment, usually with a clear and defined cause
+-   An acute injury is a sudden injury that occurs at a specific,
+    identifiable moment, usually with a clear and defined cause
 
-- It results directly from tissue damage when the affected tissue is unable to withstand the load or force applied to it
+-   It results directly from tissue damage when the affected tissue is
+    unable to withstand the load or force applied to it
 
-::: {#injury layout-ncol=2}
-
+::: {#injury layout-ncol="2"}
 ![](images/solinj.jpg)
-
 
 ![](images/foot.png)
 :::
-
 
 ### Overuse injuries
 
@@ -206,55 +208,61 @@ theme(axis.text.x = element_blank(),
   
 
 ```
+::::
 
+::: fragment
+["Too much, too soon, and with too little rest"]{.bg
+style="--col: pink"}
 :::
 
-::: {.fragment}
+::: notes
+overuse injures are the most prevelent cause of all sports related
+injuries also in the military context
 
-["Too much, too soon, and with too little rest"]{.bg style="--col: pink"}
+Injuries that is gradually developing as a consequence of overuse over
+time Related to duration, intensity and frequency of training And the
+training load is greater than tissues ability to adapt over time
 
+It is often related to monotonomy loading pattern, or repetitive
+movements like throwing in sports or military force
 :::
-
-::: {.notes}
-
-overuse injures are the most prevelent cause of all sports related injuries also in the military context
-
-Injuries that is gradually developing as a consequence of overuse over time
-Related to duration, intensity and frequency of training
-And the training load is greater than tissues ability to adapt over time
-
-It is often related to monotonomy loading pattern, or repetitive movements like throwing in sports or military force
-
-:::
-
 
 ## Armed forces injury prevention {visibility="hidden"}
+
 ### Startegies to prevent injuries in military personel
 
+1\. Education of military leaders
 
-1\. Education of military leaders  
-  
-2\. Prevent overtraining (training planing)  
-  - individualized training program
-  - train smarter? reduce training volume while maintaining physical fitness and reduce injury rates
-  
-3\. Warm-up strategies  
+2\. Prevent overtraining (training planing)\
+- individualized training program - train smarter? reduce training
+volume while maintaining physical fitness and reduce injury rates
 
-4\. 
+3\. Warm-up strategies
 
+4\.
 
-![](images/mili-lec.jpg){.absolute bottom=0 right=-50 height="250"}
-
+![](images/mili-lec.jpg){.absolute bottom="0" right="-50" height="250"}
 
 [@wardle_2017]
 
 ## Injury prevetion strategies for military personel
 
-::: {.r-stack}
+:::::: r-stack
+```{r strat0}
+#| out-width: 100%
+#| 
+# Load necessary libraries
+library(magick)
 
-::: {.fragment}
+# Read the image
+tabrec <- image_read("images/table-rec.png")
 
 
+tabrec
+
+```
+
+::: {.fragment fragment-index="1"}
 ```{r strat1}
 #| out-width: 100%
 
@@ -286,8 +294,7 @@ tabrec
 ```
 :::
 
-::: {.fragment}
-
+::: {.fragment fragment-index="2"}
 ```{r strat2}
 #| out-width: 100%
 
@@ -312,7 +319,7 @@ tabrec
 ```
 :::
 
-::: {.fragment}
+::: {.fragment fragment-index="3"}
 ```{r strat3}
 #| out-width: 100%
 
@@ -335,34 +342,56 @@ tabrec
 
 
 ```
-
 :::
-
-:::
+::::::
 
 Table from @wardle_2017 review
 
-::: {.notes}
+::: notes
+-   The authors found good evidence for some strategies that most likely
+    prevent injuries, which is marked in green
 
-- knowledge of physical fitness, supervision of injury prevention strategies are important for prevention for injury
-- important for making an appropriate training plan that accounts for soldiers multifactorial stress components, that may lead to overtraining and risk for muscloskeletal injuries.
+-   knowledge of physical fitness, supervision of injury prevention
+    strategies are important for prevention for injury
 
-reducing physical training volume in the **initial** military training may benefit the soldier. A progressive load on soldiers body, may reduce development of overuse injuries.
+-   important for making an appropriate training plan that accounts for
+    soldiers multifactorial stress components, that may lead to
+    overtraining and risk for muscloskeletal injuries.
 
+-   reducing physical training volume in the **initial** military
+    training may benefit the soldier. A progressive load on soldiers
+    body, may reduce development of overuse injuries.
 
+    -   during initial military training soldiers experience 25-50% of
+        physical training-related injuries. That can be seen in
+        conjuction with excessive training relative to initial fitness
+        level
 
-
+-   including education was included as a primary component of an injury
+    prevention program, injuries was reduced with 30%. Telling us that
+    knowledge of what can expose soldiers for increased risk of injury
+    and how to circumvent that is an essential element for military
+    commandors.
 :::
 
+::: notes
 --- Fortsett med bakgrunn, make it brief
 
+--- Videre fortsett med oppvarmingsstrategier, altså dynamisk oppvarming
+hva og hvordan? Finn referanser
 
+Several reviews of the literature repeat the common theme that
+standardized running programs that begin with low mileage and intensity,
+and gradually progress distance and speed, allow the body to gradually
+adapt to increasing stressors \[Bulloc 2010\]
+:::
 
 # Mechanisms of Warm-up
 
 ## Mechanisms of Warm-up
 
 ```{r intro, message=FALSE, echo=FALSE, warning=FALSE}
+
 # Load necessary libraries
 library(magick)
 library(ggplot2)
@@ -397,15 +426,10 @@ arrow
 
 ```
 
-
-
-
 ## Mechanisms of Warm-up
 
-::: {.r-stack}
-
-:::{.fragment}
-
+:::::::: r-stack
+::: fragment
 ```{r 1}
 #| out-width: 100%
 
@@ -416,7 +440,7 @@ wup
 ```
 :::
 
-:::{.fragment}
+::: fragment
 ```{r 2}
 #| out-width: 100%
 
@@ -426,7 +450,7 @@ wup
 ```
 :::
 
-:::{.fragment}
+::: fragment
 ```{r 3}
 #| out-width: 100%
 
@@ -435,10 +459,9 @@ wup
   image_annotate("Oxygen kinetics", size = 30, color = "white", location = "+550+120") 
 
 ```
-
 :::
 
-:::{.fragment}
+::: fragment
 ```{r 4}
 #| out-width: 100%
 
@@ -449,10 +472,9 @@ wup
 
 
 ```
-
 :::
 
-:::{.fragment}
+::: fragment
 ```{r 5}
 #| out-width: 100%
 
@@ -464,273 +486,400 @@ wup
 
 
 ```
-
 :::
-
-:::
+::::::::
 
 [@mcgowan_2015]
 
+::: notes
+1.  Main event of warm-up is the increase in body and muscle
+    temperature, wherein higher temperature facilitaate work more
+    effectively such as greater muscle metabolism (by greater turnover
+    rate of energy packages in the muscle).
+
+2.  With a greater muscle temperature an increase in power output is
+    observed through as the rate of force development increases due to
+    an optimized cross-bridge cycling rate.
+
+3.  O2-kinetics: warm-up can prime the body to an elevated oxygen uptake
+    and aerobic metabolisms can contribute to spare finite anaerobic
+    stores during the initial stages of an exercise bout, thus
+    preserving this energy for subsequent use.
+
+-   Theory: an increase in muscle temperature of
+    $\text{1 }^{\circ}\text{C}$ can enhance subsequent exercise
+    performance by 2-5% [@racinais_2010].
+
+In zochowski 2007 - Enhanced performance has been associated with
+vasodilation of muscle blood vessels and the associated rightward shorth
+og hte oxyhemoglobin-dissociation curve after warm-up. - Hemoglobin
+gives up almost twice as much oxygen at $\text{41 }^{\circ}\text{C}$ as
+at $\text{36 }^{\circ}\text{C}$, and oxygen dissociates twice as
+rapidly. - Improves central-nervous-system function (p 202) - Warm-up
+can allow subsequent tasks to begin with an elevated baseline
+$\text{VO}_{2}$. Resulting in less of the initial work is completed
+anaerobically.
+:::
+
+# Injury prevention
+
+
+## Power of warm-up
+
+### Why warm-up? Planing the warm-up
+
+- Equally important (to plan as the main session)
+  - effective and keep the overall training load minimal
+
+- Activities that contribute to the aims of the overall session
+
+- Usually ~10-30 min 
+
+
 ::: {.notes}
 
+- not in particular longer, especial for power sports to reduce fatigue and use of energy stores...
 
-1. Main event of warm-up is the increase in body and muscle temprature, wherein higher temperature facilitaate work more effectively such as greater muscle metabolism (by greater turnover rate of energy packages in the muscle). 
-
-
-2. With a greater muscle temperature an increase in power output is observed through as the rate of force development increases due to an optimized cross-bridge cycling rate.
-
-3. O2-kinetics: warm-up can prime the body to an elevated oxygen uptake and aerobic metabolisms can contribute to spare finite anaerobic stores during the initial stages of an exercise bout, thus preserving this energy for subsequent use. 
+:::
 
 
+## Power of warm-up
 
-- Theory: an increase in muscle temperature of $\text{1 }^{\circ}\text{C}$ can enhance subsequent exercise performance by 2-5% [@racinais_2010].
+### Are there any guidelines to use in the literature?
 
-In zochowski 2007
-- Enhanced performance has been associated with vasodilation of muscle blood vessels and the associated rightward shorth og hte oxyhemoglobin-dissociation curve after warm-up.
-- Hemoglobin gives up almost twice as much oxygen at $\text{41 }^{\circ}\text{C}$ as at $\text{36 }^{\circ}\text{C}$, and oxygen dissociates twice as rapidly.
-- Improves central-nervous-system function (p 202)
-- Warm-up can allow subsequent tasks to begin with an elevated baseline $\text{VO}_{2}$. Resulting in less of the initial work is completed anaerobically.
+
+```{r intensity}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-width: 6.5
+#| fig-height: 7.5
+#| fig-align: center
+
+# Simulate some data
+set.seed(123)
+df <- data.frame(
+  x = 1:100,
+  y = sort(runif(100, 0, 100))) |> 
+  
+  mutate(RAMP = ifelse(x == 10, "RAISE",
+                       ifelse(x == 50, "Activate and Mobilize",
+                              ifelse(x == 85, "Potentiation",x)))) 
+  
+# Create the ggplot
+ggplot(df, aes(x = x, y = y, color = y)) +
+  
+  geom_line(size = 3) +
+  scale_color_gradient(low = "lightblue", high = "darkblue") +
+  
+  labs(title = "Performance / Workout ready",
+       x = "RAMP-method",
+       y = "Intensity of exercise",
+       color = "Y Value") +
+  
+  # Raise
+  annotate("text", x=10, y=37, label="Raise", colour="purple", size=5.3) +
+  annotate("rect", xmin = 0, xmax = 25, ymin = 0, ymax = 35,
+  alpha = .2) +
+  annotate("text", x=12, y=5, label="Run, technique,\n low intensity") +
+  
+  
+  annotate("text", x=50, y=68, label="Activate and Mobilize", colour="purple", size=5.3) +
+  annotate("rect", xmin = 30, xmax = 65, ymin = 35, ymax = 65,
+  alpha = .2)+
+  annotate("text", x=48, y=40, label="Muscle-\n specific activation") +
+  
+  
+  annotate("text", x=87, y=102, label="Potentiation", colour="purple", size=5.3) +
+  annotate("rect", xmin = 75, xmax = 100, ymin = 65, ymax = 100,
+  alpha = .2) +
+  annotate("text", x=88, y=76, label="Sport-\n specific exercises") +
+  
+  
+  # add arrow line
+  annotate(
+  geom = "segment", x = 4, y = 0, xend = 95, yend = 0, 
+   arrow = arrow(length = unit(2, "mm"), type="closed")) +
+   annotate("text", x=50, y=3, label="Specificity", colour="purple", size=5.3) +
+  
+  
+  theme_classic() +
+  theme(axis.text.x = element_blank(),
+        legend.position = "none")
+
+  
+
+
+
+
+```
+
+
+
+
+::: {.absolute bottom=-25 left=0 style="font-size: 50%;"}
+[Figure created with inspiration from @jeffreys_2007]
+:::
+
+::: {.notes}
+
+RAMP - method
+
+- Raise - general warm up
+
+- Activate and mobilize
+
+- Potentiation
+
+
+One way of structuring an effective warm-up protocol is to follow the RAMP-method
+
+- RAISE: Aims to elevate body temperature, heart rate, respiration rate, blood flow, and joint viscosity via low-intensity activities
+
+- Activate and mobilize: involves a series of specific dynamic key movement patterns involved in sports, toghether with a focus of key muscles that need to be activated to produce these movements (specificity to you sport or performance like obstacle course or throwing grenades..)
+
+
+- Potentiation: aims to increase activity to maximal intensity and potentiate PAP
+  - The aim of this part is to gradually shift towards the actual sport performance or workout itself.
+  - and will involve sport specific activities of increasing intensity...
+
+  - A sprint workout will comprose of sprint drills and sprints of increasing intensity or
+  - reistance training workout, will involve acitivites such as plyometric, and progressive and explosive resistance exercises to provide a progression towards the workout itself.
+
+The RAMP framewok approach provides a framework around which to construct effective warm-up procedures for both competition and the workout
 
 :::
 
 
 
-
-# Injury prevention
 
 ## Armed forces injury prevention
 
 ### Warm-up strategies
 
-- Dynamic warm up should include agility, plyometrics, power, cora and balance
-- These components enhance muscle flexibility, joint mobility, and neuromuscular activation, which is essential for optimal injury prevention
+
+-   Dynamic warm up should include agility, plyometrics, power, core and
+    balance
+
+-   These components enhance muscle flexibility, joint mobility, and
+    neuromuscular activation, which is essential for optimal injury
+    prevention
+
+[@soligard_2008; @kirkendall_2010]
+
+::: notes
+-   Has a substantial impact of the readiness of the force
+
+-   Due to the amount of limited duty time they cause
+:::
+
+
+
+## Power of warm-up
+
+### 7 dynamic exercises after 5 min of jogging
+
+| Exercise         | Improved performance (cohens d) | % of studie*|
+|---------------------|--------------------|---------|
+| Sprinting           | **-7.7% **(1.72)    | 69%     |
+| Jumping             | **-8.61%** (0.61)   | 87%     |
+| Agility performance | **-6.65%**  (1.40)   | 83%     |
+
+: Table created from @silva_2018. *% of 19 studies showing improvements in performance
 
 
 ::: {.notes}
 
-- Has a substantial impact of the readiness of the force
-- Due to the amount of limited duty time they cause
-
+- Dynamic stretching at the end of warm-up may improve explosive tasks and sprint performance'
+- Static stretching prior to power dominat, speed and agility activities may result in performance deficits 
 
 
 :::
 
 
 ## Implementation of warm-up i sports {.smaller}
+
 ### Movements
 
-- Rapid movement exercises
+-   Rapid movement exercises
 
-- Six different sets of exercise (fotbal)  
-1\ slow runing with moveemnts  
-2\ strength - plyometrics and balance (10 min)  
-3\ speed running specific to football (sudden changes/direction)  
-
+-   Six different sets of exercise (fotbal)\
+    1 slow runing with moveemnts\
+    2 strength - plyometrics and balance (10 min)\
+    3 speed running specific to football (sudden changes/direction)
 
 Outcome:
 
-Lower risk of injuries overall, overuse injures and severe injuries in the intervention group
+Lower risk of injuries overall, overuse injures and severe injuries in
+the intervention group
 
-*Can reduce the risk of injury with 50% *
+*Can reduce the risk of injury with 50%*
 
-[@soligard_2008;@kirkendall_2010]
+[@soligard_2008; @kirkendall_2010]
 
-
-::: {.notes}
-
-- plank, side plank, nordic hamstring, single leg balance
-- jumping exercise
-- fast runing exercises
-
+::: notes
+-   plank, side plank, nordic hamstring, single leg balance
+-   jumping exercise
+-   fast runing exercises
 :::
-
-
-
-
-
 
 ## Warm-up
 
-- General warm-up
-- Specific warm-up
+-   General warm-up
 
-- Stretching
+-   Specific warm-up
 
-- For subsequent training exercises
+-   Stretching
 
-- Transition phase (15 min sprint performance)
- 
-**[injury prevetnion vs. performance enhancing effect]**
+-   For subsequent training exercises
 
+-   Transition phase (15 min sprint performance)
 
-
+**\[injury prevetnion vs. performance enhancing effect\]**
 
 # Warm-up For Injury and Performance Enhancement
 
 ## Warm-up
+
 ### Active warm up
 
+-   Warm-up for subsequent exercise performance
 
-- Warm-up for subsequent exercise performance 
+-   Elevation of oxygen uptake kinetics
 
-- Elevation of oxygen uptake kinetics
-  - Baseline VO_2 may be elevated in response the priming exercise
-  - Transition phase should not exceed 10 min
-  - May lead to an initial sparing of persons anaerobic stores, preserving this energy for subsequent use
-
+    -   Baseline VO_2 may be elevated in response the priming exercise
+    -   Transition phase should not exceed 10 min
+    -   May lead to an initial sparing of persons anaerobic stores,
+        preserving this energy for subsequent use
 
 ## Passive Warm-Up
 
+-   Not commonly used
 
-- Not commonly used
+-   Seems to only be a meaningfull advantage to *maintain* an elevated
+    body temperature (achieved by active movements) throughout the
+    transition phase
 
-- Seems to only be a meaningfull advantage to *maintain* an elevated body temperature (achieved by active movements) throughout the transition phase
+::: notes
+-   that you may experience in competition where there is some time
+    between warm-up and competition
+:::
 
-::: {.notes}
-
-- that you may experience in competition where there is some time between warm-up and competition
-
-::: 
-
- 
 ## Implementation of warm-up i sports
+
 ### The throwing athlete - movement demand
 
-:::: {.columns}
-
+:::::: columns
 ::: {.column width="50"}
+-   Having a greater flexibility in external rotation can benefit the
+    throwing performance
 
-- Having a greater flexibility in external rotation can benefit the throwing performance
+-   However, excessive stretching can exacerbate capsule laxity and lead
+    to shoulder instability
 
-- However, excessive stretching can exacerbate capsule laxity and lead to shoulder instability
-
- - Stretching together with repetitive throwing motions with extreme external rotation can lead to capsular instability and injury (labrum and rotator cuff muscles)
-    
-
+-   Stretching together with repetitive throwing motions with extreme
+    external rotation can lead to capsular instability and injury
+    (labrum and rotator cuff muscles)
 :::
 
+:::: {.column width="50"}
+::: r-stack
+![](images/shoulder-bio-0.png){.fragment .absolute .fade-in-then-out
+height="600" right="30"}
 
-::: {.column width="50"}
+![](images/shoulder-bio.png){.fragment .absolute height="600"
+right="30"}
 
-::: {.r-stack}
+![](images/shoulder-bio-1.png){.fragment .absolute height="600"
+right="30"}
 
-
-![](images/shoulder-bio-0.png){.fragment  .absolute height="600" right=30 .fade-in-then-out}
-
-
-
-
-![](images/shoulder-bio.png){.fragment .absolute height="600" right=30}
-
-![](images/shoulder-bio-1.png){.fragment .absolute height="600" right=30}
-
-![](images/shoulder-bio-soldier.png){.fragment .absolute height="600" right=-360}
-
-
+![](images/shoulder-bio-soldier.png){.fragment .absolute height="600"
+right="-360"}
 :::
-:::
-
-
 ::::
-
+::::::
 
 ## Implementation of warm-up i sports {.smaller}
+
 ### The throwing athlete - soldier
 
-:::: {.columns}
-
+::::: columns
 ::: {.column width="50%"}
-    
 **How can we circumvent this throwing paradox?**
 
-- Increasing the range of motion elsewhere in the chain?
+-   Increasing the range of motion elsewhere in the chain?
 
-- Increasing thoracic spine mobility in extension and rotation
-- Eliminates the excessive glenohumeral external rotation range of motion
-- Which avoids stress on the anterior capsule laxitiy and stress on bicpes brachii tendon (long head)
+-   Increasing thoracic spine mobility in extension and rotation
 
+-   Eliminates the excessive glenohumeral external rotation range of
+    motion
+
+-   Which avoids stress on the anterior capsule laxitiy and stress on
+    bicpes brachii tendon (long head)
 
 [@mayes_2022]
-
 :::
-
 
 ::: {.column width="50%"}
-
-![](images/shoulder-bio-soldier.png){.fragment .absolute height="500" top=100 right=-260}
-
-
-
+![](images/shoulder-bio-soldier.png){.fragment .absolute height="500"
+top="100" right="-260"}
 :::
+:::::
 
-
-::::
-
-::: {.notes}
-
-
+::: notes
 :::
 
 ## Implementation of warm-up i sports
-### The throwing athlete / soldier
 
+### The throwing athlete / soldier
 
 ![](images/shoulder_3.png)
 
-::: {.notes}
-
-- 
-
+::: notes
+-   
 :::
 
 ## Implementation of warm-up i sports
-### The throwing athlete / soldier
 
+### The throwing athlete / soldier
 
 ![](images/shoulder_2.png)
 
-
-::: {.notes}
-
-- The late cocking phase prepared the arm for forward acceleration and subsequent ball release
-
+::: notes
+-   The late cocking phase prepared the arm for forward acceleration and
+    subsequent ball release
 :::
 
 ## Implementation of warm-up i sports
-### The throwing athlete 
+
+### The throwing athlete
 
 How does a proper warm-up session look like for an throwing athlete
 
-- Prevent pain and injury
+-   Prevent pain and injury
 
-- Program should encompass
-    - thoracic spoine mobility exercises 
-    - facilitate shoulder stabilizers trapezius, rotator cuff muscles, scapula stabilizers (m. trapezius)
-    - warm-up reduces risk on injury in all phases of a throw
+-   Program should encompass
 
-
-
-
+    -   thoracic spoine mobility exercises
+    -   facilitate shoulder stabilizers trapezius, rotator cuff muscles,
+        scapula stabilizers (m. trapezius)
+    -   warm-up reduces risk on injury in all phases of a throw
 
 # Warm-up and the link to performance
-
 
 ## Mechanisms of Warm-up
 
 ### Accociation to performance
 
-:::: {.columns}
-
+::::: columns
 ::: {.column width="50%"}
-
-An increase in muscle temperature of $\text{1}^{\circ}\text{C}$ can enhance subsequent exercise performance by [2-5%]{.bg style="--col: pink"}  [@racinais_2010].
+An increase in muscle temperature of $\text{1}^{\circ}\text{C}$ can
+enhance subsequent exercise performance by [2-5%]{.bg
+style="--col: pink"} [@racinais_2010].
 :::
 
 ::: {.column width="50%"}
-
-
 ![](images/corr-temp-per.png)
-
 
 ```{r corr plot}
 #| fig-width: 6.0
@@ -742,159 +891,133 @@ corr_plot <- image_read("images/corr-temp-per.png")
 
 
 ```
-
 :::
+:::::
 
-::::
-
-::: {.notes}
-
--
-
+::: notes
+-   
 :::
 
 ## Mechanisms of Warm-up {.smaller}
 
 ### Accociation to performance
 
-:::: {.columns}
-
-::: {.column width="50%"}
-
-6 males (mean age 25)  
+:::::: columns
+:::: {.column width="50%"}
+6 males (mean age 25)\
 Cross-over design - separated by 14 days.
 
 6 sec maximal sprint on a cycle ergometer
 
-*First meeting*  
-- Pre warmed thigh muscles in a bath ($\text{42.8}^{\circ}\text{C}$) for 30 min.
+*First meeting*\
+- Pre warmed thigh muscles in a bath ($\text{42.8}^{\circ}\text{C}$) for
+30 min.
 
-*Second meeting*  
+*Second meeting*\
 - normal condition
 
 ::: {.fragment .custom .blur}
-Results:  
-Pre warmed to $\text{37.5}^{\circ}\text{C}$ vs. normal condition $\text{34}^{\circ}\text{C}$
+Results:\
+Pre warmed to $\text{37.5}^{\circ}\text{C}$ vs. normal condition
+$\text{34}^{\circ}\text{C}$
 
-Performance at the sprints:  
+Performance at the sprints:\
 Mean power output: **971 W vs. 859 W**
 :::
-
-:::
-
-::: {.column width="50%"}
-
-![](images/poweroutput6sec.png){.absolute  height="600" top=100 right=60}
-
-:::
-
 ::::
 
-::: {.notes}
+::: {.column width="50%"}
+![](images/poweroutput6sec.png){.absolute height="600" top="100"
+right="60"}
+:::
+::::::
 
-Mean power output during the sprint was greater in the pre warm group compared to the normal condition group
+::: notes
+Mean power output during the sprint was greater in the pre warm group
+compared to the normal condition group
 
-Probably due to the elevated temperature improves **cross-bridge cycling between actin and myosin proteins in the muscle cell**.
-
+Probably due to the elevated temperature improves **cross-bridge cycling
+between actin and myosin proteins in the muscle cell**.
 :::
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Warm-up for performance {.smaller}
+
 ### Swimming
 
-- Pooled based warm-ups vs. dry-land-based warm-ups
-    - Performance? 
-    
-- Active vs. no warm-up  
-    - Faster [] and similar [] performance after 1000 m pooled-based
+-   Pooled based warm-ups vs. dry-land-based warm-ups
+    -   Performance?
+-   Active vs. no warm-up
+    -   Faster \[\] and similar \[\] performance after 1000 m
+        pooled-based
+-   Race-pace effort during warm-up (prime swimmers)
+    -   Faster 50m split times \[\]
 
-- Race-pace effort during warm-up (prime swimmers)
-    - Faster 50m split times []
-
-    
 ## Warm-up for performance {.smaller}
+
 ### Swimming
 
-- Transition phase
-    - Often long time between active warm-up and competition (often >20 min)
-    
-- Shorter transition phase (10vs. 45 min) is associated with better performance (200m) [@zochowski_2007]
+-   Transition phase
 
-    - Maintain elevated core temperature
-    
-- What to to?
-    - Should complete between 500 - 1200 m
-    - Include a short race pace efforts towards the end of of their pool warm-up
+    -   Often long time between active warm-up and competition (often
+        \>20 min)
 
+-   Shorter transition phase (10vs. 45 min) is associated with better
+    performance (200m) [@zochowski_2007]
 
-::: {.notes}
+    -   Maintain elevated core temperature
 
-1. Coaches believe that this is superior as it is gaining a feel for the water
+-   What to to?
 
-2. However, this is not the case. Both methods can enhance swimming performance
+    -   Should complete between 500 - 1200 m
+    -   Include a short race pace efforts towards the end of of their
+        pool warm-up
 
-3. 
+::: notes
+1.  Coaches believe that this is superior as it is gaining a feel for
+    the water
 
-4. Dry-land activities can be a nice alternative to maintain elevated body core temperature
+2.  However, this is not the case. Both methods can enhance swimming
+    performance
 
+3.  
 
+4.  Dry-land activities can be a nice alternative to maintain elevated
+    body core temperature
 :::
-
 
 ## Take home for injury prevention
 
-- Education of military leaders:
-  - Training load and intensity planing (total training load)  
-  - Resistance training  
+-   Education of military leaders:
+    -   Training load and intensity planing (total training load)\
+    -   Resistance training
+-   Warm-up strategies
+    -   Injury
+    -   Improve performance
+-   Mobility exercises?
 
-- Warm-up strategies
-    - Injury
-    - Improve performance
-    
-- Mobility exercises?
-    
-  
-::: {.notes}
-
-Start with a case, problem,  
-Set the stage  
-And ask how would the students think of this in the light of this lecture, 
-alternative, illustrate how experts in this field would think about it  
-
+::: notes
+Start with a case, problem,\
+Set the stage\
+And ask how would the students think of this in the light of this
+lecture, alternative, illustrate how experts in this field would think
+about it
 :::
 
 ## Assignment for residental stay
 
 Assignments for the delegations that needs to be prepared
 
-- [Romanian Cadets:]{.bg style="--col: yellow"} make a warm-up session for 30 min that prepare the fellow cadets for the obstacle course
+-   [Romanian Cadets:]{.bg style="--col: yellow"} make a warm-up session
+    for 30 min that prepare the fellow cadets for the obstacle course
 
-- [Greece cadets:]{.bg style="--col: lightblue"} make a warm-up session for 30 min that prepare the fellow cadets for grenade throw
+-   [Greece cadets:]{.bg style="--col: lightblue"} make a warm-up
+    session for 30 min that prepare the fellow cadets for grenade throw
 
-- [Latvian cadets:]{.bg style="--col: darkred"}  make a warm-up session for 30 min that prepare the fellow cadets for the swimming course
+-   [Latvian cadets:]{.bg style="--col: darkred"} make a warm-up session
+    for 30 min that prepare the fellow cadets for the swimming course
 
-- [Bulgarian cadets:]{.bg style="--col: darkgreen"} make a warm-up session for 30 min that prepare the fellow cadets for the obstacle course
-
-
-
+-   [Bulgarian cadets:]{.bg style="--col: darkgreen"} make a warm-up
+    session for 30 min that prepare the fellow cadets for the obstacle
+    course
 
 ## References
-
