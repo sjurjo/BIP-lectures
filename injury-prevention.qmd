@@ -33,23 +33,41 @@ library(tidyverse)
 library(ggplot2)
 ```
 
-## Flipped classrom approach
+## Flipped classrom approach {visibility="hidden"}
 
 1- 10-15 min digital lecture + assignment\
 2- in class - key points + group discussions related to injury
 prevention strategies\
 3- out class - example session made by and for the cadets
 
-# Welcome to this module
+# Welcome to this learning module {.smaller}
 
--   Outline:
-    -   Who I am?
-    -   Purpose of this module
-    -   Our expectations to you
-    -   How the working module is organized
-    -   From the virtual to the redidental part
+-   Who I am?
+- Learning outcomes from this module:   
+    1\. Knowledge of the purpose of warming up prior to exercise (both for injury prevention and performance, and some main mechanisms that is occurring)  
+    2\. Knowledge to set up a warm-up program for a specific exercise  
+      
+-   Our expectations to you  
+    - Take the digital lecture
+    - Spend some time on the working material handed out on the platform and prepare the assignment together as a team (nation wise)
 
-## How do you avoid getting injured during service?
+-   How is the working module organized to enhance learning
+    - From the virtual to the residential part
+    
+    
+    
+::: {.notes}
+
+- Working as an associate professor at the Norwegian Defence Cyber Academy, one of the organizers
+
+
+- The module about warming up is organized with the purpose of activating you as a learner. This means that you will more active in your own learning process, through the brief digital lectures and using the knowledge from the lecture together with the literature handed out you will develop a warm up program that you as a nation will execute on the other participating nations.
+
+- At the residential stay you will present this program for the other participating nations before you will execute the program at the allocated time you will receive.
+
+:::
+
+## How do you avoid getting injured during service? [during residental stay]
 
 Start the lecture with a question or case.
 
@@ -74,19 +92,34 @@ residential stay
 ::: notes
 :::
 
-# Injuries in the armed forces
+# Injuries in Military personel
 
-## Injuries in the armed forces
+## Injuries in Military personel
 
 ### Training-related injuries
 
--   Injuries results in five to 22 times more days of limited duty than
-    illnesses [@knapik_2004]
+:::{.fragment .semi-fade-out}
 
--   Physical training is a primary cause and risk factor for
-    musculoskeletal injuries [@wardle_2017]
+-   Injuries results in five to 22 times more days of limited duty than illnesses [@knapik_2004]
+:::
 
+::: {.fragment .fade-in-then-semi-out}
+-  In 2019, 55% of active duty soldiers in the US army reported an injury (Musculoskeletal system)
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+ - 72% of these were considered to be overuse injuries [@vahi_2023]
+:::
+
+
+::: {.fragment .fade-in-then-semi-out}
+-   Physical training is a primary cause and risk factor for musculoskeletal injuries [@wardle_2017]
     -   Recruits more vulnerable for injuries
+    
+:::
+
+
+![](images/sol_injury_3.png){.absolute bottom=-5 right=-170 height="230"}
 
 ::: notes
 -   yet developing and maintaining physical capability is a critical
@@ -120,7 +153,9 @@ residential stay
 :::
 
 ### Overuse injuries
+::: {.r-stack}
 
+::: {.fragment fragment-index=1}
 ```{r injury}
 #| echo: false
 #| fig-width: 6.5
@@ -134,7 +169,7 @@ data <- data.frame(
 )
 
 # Create a basic coordinate system and plot the points
-ggplot(data, aes(x = x, y = y)) + 
+injuryplot <- ggplot(data, aes(x = x, y = y)) + 
   geom_point(size = 3, color = "blue") +  # Plot points
   geom_line() +
     scale_y_continuous(
@@ -149,8 +184,35 @@ ggplot(data, aes(x = x, y = y)) +
   geom_hline(yintercept=0,
                 linetype=4, colour="red") +
   
-annotate("text", x=-2.5, y=-6, label= "Period with overuse") +
+
+
+  
+  labs(title = "Overuse injury",
+       x = "Time (weeks/months)",
+       y = "Tissue damage") +  # Add labels
+  theme_classic() + # Use a minimal theme
+theme(axis.text.x = element_blank(),
+      axis.text.y = element_blank(),
+      #axis.title.x = element_text(size=4),
+      plot.title = element_blank())
+
+   injuryplot
+
+```
+:::
+
+
+::: {.fragment fragment-index=2}
+```{r injury11}
+#| echo: false
+#| fig-width: 6.5
+#| fig-height: 6.0
+
+injuryplot + 
+  
+  annotate("text", x=-2.5, y=-6, label= "Period with overuse") +
   annotate("text", x=-2.5, y=-0.5, label= "Periods with failed\n tissue adaptations") +
+  
   
     geom_curve(aes(x = -4, y = -0.8, xend = -2, yend = -1),
     arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
@@ -163,39 +225,7 @@ annotate("text", x=-2.5, y=-6, label= "Period with overuse") +
     color = "blue",
     size = 1.2,
     curvature = 0.3) +
-  
-  
-    annotate("text", x=2.5, y=8.5, label= "Time of experienced injury\n Loss of duty time") +
-  
-     geom_curve(aes(x = 2.5, y = 7.8, xend = 0.3, yend = 8),
-    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
-    color = "blue",
-    size = 1.2,
-    curvature = -0.3) +
-  
-    annotate("text", x=3.2, y=7., label= "RTP / Return to duty attempt") +
-    geom_curve(aes(x = 2.8, y = 6.8, xend = 2.3, yend =5),
-    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
-    color = "blue",
-    size = 1.2,
-    curvature = -0.3) +
-  
-    annotate("text", x=2.8, y=-2.0, label= "RTP / Return to duty") +
-    geom_curve(aes(x = 2.8, y = -2.8, xend = 4.8, yend =-4.2),
-    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
-    color = "blue",
-    size = 1.2,
-    curvature = 0.3) +
-  
-  
-    annotate("text", x=-3.0, y=5.4, label= "Increased perception\n of pain") +
-  
-    geom_curve(aes(x = -3.0, y = 5.0, xend = -0.8, yend =2.2),
-    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
-    color = "blue",
-    size = 1.2,
-    curvature = 0.3) +
-  
+
   
   labs(title = "Overuse injury",
        x = "Time (weeks/months)",
@@ -205,10 +235,161 @@ theme(axis.text.x = element_blank(),
       axis.text.y = element_blank(),
       #axis.title.x = element_text(size=4),
       plot.title = element_blank())
-  
+
+
+
 
 ```
+:::
+
+
+::: {.fragment fragment-index=3}
+```{r injury2}
+#| echo: false
+#| fig-width: 6.5
+#| fig-height: 6.0
+
+injuryplot + 
+  
+   annotate("text", x=2.5, y=8.5, label= "Time of experienced injury\n Loss of duty time") +
+  
+    geom_curve(aes(x = 2.5, y = 7.8, xend = 0.3, yend = 8),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = -0.3) +
+  
+    annotate("text", x=-3.0, y=5.4, label= "Increased perception\n of pain") +
+  
+    geom_curve(aes(x = -3.0, y = 5.0, xend = -0.8, yend =2.2),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = 0.3) +
+  
+    labs(title = "Overuse injury",
+       x = "Time (weeks/months)",
+       y = "Tissue damage") +  # Add labels
+  theme_classic() + # Use a minimal theme
+theme(axis.text.x = element_blank(),
+      axis.text.y = element_blank(),
+      #axis.title.x = element_text(size=4),
+      plot.title = element_blank())
+  
+  
+  
+```
+:::
+
+::: {.fragment fragment-index=4}
+```{r injury3}
+#| echo: false
+#| fig-width: 6.5
+#| fig-height: 6.0
+
+injuryplot + 
+  
+   annotate("text", x=2.5, y=8.5, label= "Time of experienced injury\n Loss of duty time") +
+  
+    geom_curve(aes(x = 2.5, y = 7.8, xend = 0.3, yend = 8),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = -0.3) +
+  
+      annotate("text", x=-3.0, y=5.4, label= "Increased perception\n of pain") +
+  
+    geom_curve(aes(x = -3.0, y = 5.0, xend = -0.8, yend =2.2),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = 0.3) +
+  
+    annotate("text", x=3.2, y=7., label= "RTP / Return to duty attempt") +
+    geom_curve(aes(x = 2.8, y = 6.8, xend = 2.3, yend =5),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = -0.3) +
+  
+  
+    labs(title = "Overuse injury",
+       x = "Time (weeks/months)",
+       y = "Tissue damage") +  # Add labels
+  theme_classic() + # Use a minimal theme
+theme(axis.text.x = element_blank(),
+      axis.text.y = element_blank(),
+      #axis.title.x = element_text(size=4),
+      plot.title = element_blank())
+  
+  
+  
+```
+:::
+
+::: {.fragment fragment-index=5}
+
+```{r injury4}
+#| echo: false
+#| fig-width: 6.5
+#| fig-height: 6.0
+
+injuryplot + 
+  
+   annotate("text", x=2.5, y=8.5, label= "Time of experienced injury\n Loss of duty time") +
+  
+    geom_curve(aes(x = 2.5, y = 7.8, xend = 0.3, yend = 8),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = -0.3) +
+  
+      annotate("text", x=-3.0, y=5.4, label= "Increased perception\n of pain") +
+  
+    geom_curve(aes(x = -3.0, y = 5.0, xend = -0.8, yend =2.2),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = 0.3) +
+  
+    annotate("text", x=3.2, y=7., label= "RTP / Return to duty attempt") +
+    geom_curve(aes(x = 2.8, y = 6.8, xend = 2.3, yend =5),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = -0.3) +
+  
+      annotate("text", x=2.8, y=-2.0, label= "RTP / Return to duty") +
+    geom_curve(aes(x = 2.8, y = -2.8, xend = 4.8, yend =-4.2),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    color = "blue",
+    size = 1.2,
+    curvature = 0.3) +
+  
+  
+    labs(title = "Overuse injury",
+       x = "Time (weeks/months)",
+       y = "Tissue damage") +  # Add labels
+  theme_classic() + # Use a minimal theme
+theme(axis.text.x = element_blank(),
+      axis.text.y = element_blank(),
+      #axis.title.x = element_text(size=4),
+      plot.title = element_blank())
+  
+  
+  
+```
+:::
+
+
+
+
+
+:::
+
 ::::
+
+
 
 ::: fragment
 ["Too much, too soon, and with too little rest"]{.bg
@@ -247,7 +428,8 @@ volume while maintaining physical fitness and reduce injury rates
 
 ## Injury prevetion strategies for military personel
 
-:::::: r-stack
+::: r-stack
+
 ```{r strat0}
 #| out-width: 100%
 #| 
@@ -343,13 +525,43 @@ tabrec
 
 ```
 :::
-::::::
+
+::: {.fragment fragment-index="4"}
+```{r strat4}
+#| out-width: 100%
+
+circles4 <- data.frame(
+  x = c( 102),  # x-coordinates of the centers
+  y = c( 235),  # y-coordinates of the centers
+  r = c( 45)           # radii of the circles
+)
+
+# Draw circles on the image
+for (i in 1:nrow(circles4)) {
+  tabrec <- image_draw(tabrec)
+  symbols(circles4$x[i], circles4$y[i], circles4$r[i], inches = FALSE, add = TRUE, fg = "blue")
+  dev.off()
+}
+
+# Display the image
+tabrec
+
+
+
+```
+:::
+
+
+:::
 
 Table from @wardle_2017 review
 
 ::: notes
--   The authors found good evidence for some strategies that most likely
-    prevent injuries, which is marked in green
+
+- So is there strategies that are recommended to implement in the military to reduce risk of injury...
+
+In this review from 2017, the authors included 61 studies for qualitative synthesis and found good evidence for some strategies that most likely
+    prevent injuries, which is marked in green (recommended)..
 
 -   knowledge of physical fitness, supervision of injury prevention
     strategies are important for prevention for injury
@@ -370,21 +582,19 @@ Table from @wardle_2017 review
 -   including education was included as a primary component of an injury
     prevention program, injuries was reduced with 30%. Telling us that
     knowledge of what can expose soldiers for increased risk of injury
-    and how to circumvent that is an essential element for military
-    commandors.
+    and how to circumvent that is an essential element for military commandors
+    
+    
+- In this review conditioning did not show robust evidence as an injury prevention (maybe a little surprising) as there was mixed conclusions across studies. Although, importantly, there was not observed any negative effects of conditioning programs on injury prevalence. 
+- This is partly due to low number of relevant and available military studies.
+
+- For. example: several reviews of the literature repeat the common theme that standardized running programs that begin with low mileage and intensity, and gradually progress distance and speed, allow the body to gradually adapt to increasing stressors \[Bulloc 2010\].
+
+So, to acoind getting injured we know that warm-up can be a strategy to reduce getting injured... 
+
 :::
 
-::: notes
---- Fortsett med bakgrunn, make it brief
 
---- Videre fortsett med oppvarmingsstrategier, altså dynamisk oppvarming
-hva og hvordan? Finn referanser
-
-Several reviews of the literature repeat the common theme that
-standardized running programs that begin with low mileage and intensity,
-and gradually progress distance and speed, allow the body to gradually
-adapt to increasing stressors \[Bulloc 2010\]
-:::
 
 # Mechanisms of Warm-up
 
@@ -425,6 +635,15 @@ arrow
 #image_write(image_with_text, path = "images/CISK_arr.png")
 
 ```
+
+
+
+::: {.notes}
+
+- 
+
+:::
+
 
 ## Mechanisms of Warm-up
 
@@ -494,34 +713,26 @@ wup
 ::: notes
 1.  Main event of warm-up is the increase in body and muscle
     temperature, wherein higher temperature facilitaate work more
-    effectively such as greater muscle metabolism (by greater turnover
+    effectively through a greater muscle metabolism (by greater turnover
     rate of energy packages in the muscle).
 
 2.  With a greater muscle temperature an increase in power output is
     observed through as the rate of force development increases due to
     an optimized cross-bridge cycling rate.
 
-3.  O2-kinetics: warm-up can prime the body to an elevated oxygen uptake
-    and aerobic metabolisms can contribute to spare finite anaerobic
-    stores during the initial stages of an exercise bout, thus
-    preserving this energy for subsequent use.
+3.  O2-kinetics: warm-up can prime the body to an elevated oxygen uptake and aerobic metabolisms can contribute to spare finite anaerobic stores during the initial stages of an exercise bout, thus preserving this energy for subsequent use.
 
--   Theory: an increase in muscle temperature of
-    $\text{1 }^{\circ}\text{C}$ can enhance subsequent exercise
-    performance by 2-5% [@racinais_2010].
+-   Theory: an increase in muscle temperature of $\text{1 }^{\circ}\text{C}$ can enhance subsequent exercise performance by 2-5% [@racinais_2010].
 
 In zochowski 2007 - Enhanced performance has been associated with
-vasodilation of muscle blood vessels and the associated rightward shorth
-og hte oxyhemoglobin-dissociation curve after warm-up. - Hemoglobin
-gives up almost twice as much oxygen at $\text{41 }^{\circ}\text{C}$ as
-at $\text{36 }^{\circ}\text{C}$, and oxygen dissociates twice as
-rapidly. - Improves central-nervous-system function (p 202) - Warm-up
-can allow subsequent tasks to begin with an elevated baseline
-$\text{VO}_{2}$. Resulting in less of the initial work is completed
-anaerobically.
+vasodilation of muscle blood vessels and the associated rightward short
+og hte oxyhemoglobin-dissociation curve after warm-up. 
+- Hemoglobin gives up almost twice as much oxygen at $\text{41 }^{\circ}\text{C}$ as at $\text{36 }^{\circ}\text{C}$, and oxygen dissociates twice as rapidly. 
+- Improves central-nervous-system function (p 202) 
+- Warm-up can allow subsequent tasks to begin with an elevated baseline $\text{VO}_{2}$. Resulting in less of the initial work is completed anaerobically.
 :::
 
-# Injury prevention
+# Warm-up for Injury Prevention
 
 
 ## Power of warm-up
@@ -552,9 +763,12 @@ anaerobically.
 #| echo: false
 #| message: false
 #| warning: false
-#| fig-width: 6.5
-#| fig-height: 7.5
 #| fig-align: center
+#| fig-height: 7.5
+#| fig-width: 6.5
+
+
+library(tidyverse)
 
 # Simulate some data
 set.seed(123)
@@ -579,9 +793,9 @@ ggplot(df, aes(x = x, y = y, color = y)) +
   
   # Raise
   annotate("text", x=10, y=37, label="Raise", colour="purple", size=5.3) +
-  annotate("rect", xmin = 0, xmax = 25, ymin = 0, ymax = 35,
+  annotate("rect", xmin = 0, xmax = 25, ymin = 10, ymax = 35,
   alpha = .2) +
-  annotate("text", x=12, y=5, label="Run, technique,\n low intensity") +
+  annotate("text", x=12, y=15, label="Run, technique,\n low intensity") +
   
   
   annotate("text", x=50, y=68, label="Activate and Mobilize", colour="purple", size=5.3) +
@@ -632,21 +846,27 @@ RAMP - method
 - Potentiation
 
 
-One way of structuring an effective warm-up protocol is to follow the RAMP-method
+One way of structuring an effective warm-up protocol is to follow the RAMP-method. The RAMP framewok approach provides a framework around which to construct effective warm-up procedures for both competition and the workout
 
 - RAISE: Aims to elevate body temperature, heart rate, respiration rate, blood flow, and joint viscosity via low-intensity activities
 
 - Activate and mobilize: involves a series of specific dynamic key movement patterns involved in sports, toghether with a focus of key muscles that need to be activated to produce these movements (specificity to you sport or performance like obstacle course or throwing grenades..)
 
 
-- Potentiation: aims to increase activity to maximal intensity and potentiate PAP
+- Potentiation: aims to increase activity to **maximal intensity** and potentiate PAP
   - The aim of this part is to gradually shift towards the actual sport performance or workout itself.
   - and will involve sport specific activities of increasing intensity...
 
   - A sprint workout will comprose of sprint drills and sprints of increasing intensity or
   - reistance training workout, will involve acitivites such as plyometric, and progressive and explosive resistance exercises to provide a progression towards the workout itself.
 
-The RAMP framewok approach provides a framework around which to construct effective warm-up procedures for both competition and the workout
+
+- Trade off between to high intensity (to increase baseline VO2), to intense warm up and short recovery period. 
+- Performance may be impaired due to decrease in high-energy phosphate stores and accumulation of H+/lactate... 
+
+
+
+- In general the warm-up should be between 10-20 min, progressive in intensity (50-90% HRmax with the aim to increase body temperature and prepare for specific tasks of the sport, and end with tasks of maximum intensity such as sprints (90%) to induce the PAP effect.
 
 :::
 
@@ -657,7 +877,19 @@ The RAMP framewok approach provides a framework around which to construct effect
 
 ### Warm-up strategies
 
+:::: {.columns}
 
+::: {.column width="50%"}
+
+
+![](images/walk-rotate.png)
+![](images/balance.png)
+![](images/agility.png){.absolute bottom=0 left=0 width="170" height="150"}
+![](images/jumpjump.png){.absolute bottom=0 left=230 width="170" height="165"}
+
+:::
+
+::: {.column width="50%"}
 -   Dynamic warm up should include agility, plyometrics, power, core and
     balance
 
@@ -665,37 +897,19 @@ The RAMP framewok approach provides a framework around which to construct effect
     neuromuscular activation, which is essential for optimal injury
     prevention
 
+:::
+
+::::
+
+::: {.absolute bottom=-35 left=0 style="font-size: 50%;"}
 [@soligard_2008; @kirkendall_2010]
+:::
 
 ::: notes
 -   Has a substantial impact of the readiness of the force
 
 -   Due to the amount of limited duty time they cause
 :::
-
-
-
-## Power of warm-up
-
-### 7 dynamic exercises after 5 min of jogging
-
-| Exercise         | Improved performance (cohens d) | % of studie*|
-|---------------------|--------------------|---------|
-| Sprinting           | **-7.7% **(1.72)    | 69%     |
-| Jumping             | **-8.61%** (0.61)   | 87%     |
-| Agility performance | **-6.65%**  (1.40)   | 83%     |
-
-: Table created from @silva_2018. *% of 19 studies showing improvements in performance
-
-
-::: {.notes}
-
-- Dynamic stretching at the end of warm-up may improve explosive tasks and sprint performance'
-- Static stretching prior to power dominat, speed and agility activities may result in performance deficits 
-
-
-:::
-
 
 ## Implementation of warm-up i sports {.smaller}
 
@@ -723,7 +937,22 @@ the intervention group
 -   fast runing exercises
 :::
 
-## Warm-up
+## Passive Warm-Up
+
+-   Not commonly used
+
+-   Seems to only be a meaningfull advantage to *maintain* an elevated
+    body temperature (achieved by active movements) throughout the
+    transition phase
+
+::: notes
+-   that you may experience in competition where there is some time
+  
+  between warm-up and competition
+:::
+
+
+## Warm-up (summary?)
 
 -   General warm-up
 
@@ -737,7 +966,11 @@ the intervention group
 
 **\[injury prevetnion vs. performance enhancing effect\]**
 
-# Warm-up For Injury and Performance Enhancement
+
+
+
+# Warm-up For Injury Prevention
+### Throwing athlete
 
 ## Warm-up
 
@@ -752,18 +985,7 @@ the intervention group
     -   May lead to an initial sparing of persons anaerobic stores,
         preserving this energy for subsequent use
 
-## Passive Warm-Up
 
--   Not commonly used
-
--   Seems to only be a meaningfull advantage to *maintain* an elevated
-    body temperature (achieved by active movements) throughout the
-    transition phase
-
-::: notes
--   that you may experience in competition where there is some time
-    between warm-up and competition
-:::
 
 ## Implementation of warm-up i sports
 
@@ -867,7 +1089,86 @@ How does a proper warm-up session look like for an throwing athlete
 
 # Warm-up and the link to performance
 
-## Mechanisms of Warm-up
+## Power of warm-up
+
+### Are there any guidelines to use in the literature?
+
+```{r intensityplot}
+#| echo: false
+#| warning: false
+#| message: false
+
+
+df_per <- data.frame(
+  x=c(0, 20, 40, 60, 70, 80),
+  y=c(75, 85, 95, 100, 100, 90))
+  
+  
+
+ggplot(df_per, aes(x = x, y = y, color = y)) + geom_smooth() +
+  geom_vline(xintercept= c(60,70), linetype = "dashed", color="red") +
+  
+    labs(title = "Changes in performance following warm-up",
+       x = "Warm-up intensity (% VO2max)",
+       y = "Intermediate/Long-term performance\n (% max)",
+       color = "Y value") +
+  
+  theme_classic()
+  
+
+
+
+```
+
+::: {.absolute bottom=-25 left=0 style="font-size: 50%;"}
+[Figure created with inspiration from @bishop_2003]
+:::
+
+
+::: {.notes}
+
+- To maximise intermediate and long-term performance, it is important that the warm-up is of sufficient duration to elevate baseline VO2, WHILE causing minimal with fatigue.
+
+- Following 5-6 min we will see a steady state VO2 consumption, and an intensity around 60-70 % within a timeframe of 10-15 min seems to enhance performance. 
+
+- Longer duration and even higher intensity, may be counterintuitive, with decreasing muscle glycogen (energy storage in the mucles)..n 
+
+
+
+Optimal 60-70% of VO2max folloed by 5 min recovery seems to enhance performance..
+task specific burst of activity, myu provide further ergogenic benefits...
+
+
+intermetidate to long term performance <5 min duration? like obstacle running or swim performance
+
+:::
+
+
+
+## Power of warm-up
+
+### 7 dynamic exercises after 5 min of jogging
+
+| Exercise            | Improved performance (cohens d) | % of studie*|
+|---------------------|-------------------- |---------|
+| Sprinting           | **-7.69% **(1.72)   | 69%     |
+| Jumping             | **+8.61%** (0.61)   | 87%     |
+| Agility performance | **-6.65%**  (1.40)  | 83%     |
+
+: % of 19 studies showing improvements in performance
+
+::: {.absolute bottom=-35 left=0 style="font-size: 50%;"}
+Table created from @silva_2018
+:::
+
+::: {.notes}
+
+- Dynamic stretching at the end of warm-up may improve explosive tasks and sprint performance'
+- Static stretching prior to power dominant, speed and agility activities may result in performance deficits 
+
+:::
+
+## Power of warm-up {.smaller}
 
 ### Accociation to performance
 
@@ -898,7 +1199,7 @@ corr_plot <- image_read("images/corr-temp-per.png")
 -   
 :::
 
-## Mechanisms of Warm-up {.smaller}
+## Power of warm-up  {.smaller}
 
 ### Accociation to performance
 
@@ -940,7 +1241,7 @@ Probably due to the elevated temperature improves **cross-bridge cycling
 between actin and myosin proteins in the muscle cell**.
 :::
 
-## Warm-up for performance {.smaller}
+## Power of warm-up  {.smaller visibility="hidden"}
 
 ### Swimming
 
@@ -952,7 +1253,7 @@ between actin and myosin proteins in the muscle cell**.
 -   Race-pace effort during warm-up (prime swimmers)
     -   Faster 50m split times \[\]
 
-## Warm-up for performance {.smaller}
+## Warm-up for performance {.smaller visibility="hidden"}
 
 ### Swimming
 
@@ -984,6 +1285,9 @@ between actin and myosin proteins in the muscle cell**.
 4.  Dry-land activities can be a nice alternative to maintain elevated
     body core temperature
 :::
+
+
+# Take home and assignment
 
 ## Take home for injury prevention
 
