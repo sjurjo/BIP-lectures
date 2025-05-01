@@ -1,0 +1,106 @@
+---
+title: "Injury prevention strategies"
+subtitle: The art of warming up
+format: clean-revealjs
+logo: images/double-logo.png
+#css: logo.css
+title-slide-attributes: 
+  data-background-image: ""
+author:
+  - name: Sjur Fortun Øfsteng | PhD
+    orcid: 0000-0000-0000-0000
+    email: Norwegian Defence Cyber Academy
+    affiliations: sofsteng@mil.no
+date: September 20 2025
+#standalone: true
+self-contained: true
+#bibliography: bib-talk.bib
+execute: 
+  echo: false
+  warning: false
+  message: false
+editor_options: 
+  
+  chunk_output_type: console
+---
+
+
+
+
+## How do you avoid getting injured during service? [during residental stay]
+
+Start the lecture with a question or case.
+
+-   What is your strategy(ies) to prevent getting injured while in the
+    military service?
+
+    -   Use two minutes to discuss with your fellow cadet
+
+
+## Armed forces injury prevention {visibility="hidden"}
+
+### Startegies to prevent injuries in military personnel
+
+1\. Education of military leaders
+
+2\. Prevent overtraining (training planing)\
+- individualized training program - train smarter? reduce training
+volume while maintaining physical fitness and reduce injury rates
+
+3\. Warm-up strategies
+
+4\.
+
+![](images/mili-lec.jpg){.absolute bottom="0" right="-50" height="250"}
+
+[@wardle_2017]
+
+
+
+::: {.notes}
+
+- out
+
+:::
+
+
+## Warm-up
+
+### Active warm up
+
+-   Warm-up for subsequent exercise performance
+
+-   Elevation of oxygen uptake kinetics
+
+    -   Baseline VO_2 may be elevated in response the priming exercise
+    -   Transition phase should not exceed 10 min
+    -   May lead to an initial sparing of persons anaerobic stores,
+        preserving this energy for subsequent use
+
+
+
+
+
+## Strategies 
+
+- Resistance training  
+    - reduce overuse injuries with 50%
+
+- Adjust equipment  
+
+- Injury prevention training / basic training
+
+- Warm up sessions:
+- Soligard, Myklebust, 2008
+
+
+
+
+
+
+
+
+
+
+
+
