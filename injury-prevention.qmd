@@ -1,5 +1,5 @@
 ---
-title: "Injury prevention strategies"
+title: "The Art of Warming Up"
 subtitle: Military Pentathlon Jørstadmoen 2025
 format: clean-revealjs
 theme: sky
@@ -12,7 +12,7 @@ author:
     orcid: 0000-0000-0000-0000
     email: Norwegian Defence Cyber Academy
     affiliations: sofsteng@mil.no
-date: September 20 2025
+date: ""
 #standalone: true
 self-contained: true
 bibliography: bib/references.bib
@@ -23,9 +23,7 @@ execute:
 editor_options: 
   
   chunk_output_type: console
-editor: 
-  markdown: 
-    wrap: 72
+
 ---
 
 ```{r}
@@ -85,7 +83,7 @@ prevention strategies\
 :::
 
 
-## Outline of this lecture
+## Outline of this lecture {.smaller}
 
 ::: {.fragment .fade-in-then-semi-out}
 1. Acute vs. overuse injuries\
@@ -117,7 +115,7 @@ prevention strategies\
 
 ::: {.fragment .fade-in-then-semi-out}
 8. Take home and working assignment\
-- Your school-team will execute this warm-up program during the
+- Your Academy will execute this warm-up program during the
 residential stay
 :::
 
@@ -170,6 +168,19 @@ residential stay
 
 -   but first, let us look into what is an injury and which definitions do we have.
 :::
+
+
+## Fron trial lecture to include in prevalence of injuries {.smaller visibility="hidden"}
+
+- most common cuases of medical encounters are related to overuse injuries in the muscloskeletal injuries, whicle medical evacuations was due to musculoskeletal injuries due to sport activities or physical training (NINDL2012 p 2661).
+
+[@nindl_2013]
+
+- solution, more specific or tailored physical training, based upon individual needs and should be considered both pre-and during deployment.
+
+- increased focus on sustaining and enhancing soldier stamina by implementing education, programs and policies to optimize aspects of activity, nutrition, and sleep amond the force. may maintain, restore and improve health by improving fitness and mitigatining illnesses and injuries NINDL2013.
+
+
 
 ## Definition of injuries {.smaller}
 
@@ -1006,7 +1017,7 @@ One way of structuring an effective warm-up protocol is to follow the RAMP-metho
 
 ## Power of warm-up
 
-### Warm-up strategies - Specificity
+### Warm-up strategies
 
 :::: {.columns}
 
@@ -1067,7 +1078,7 @@ One way of structuring an effective warm-up protocol is to follow the RAMP-metho
 ::: {.fragment .fade-in-then-semi-out}
 Program consisted of dynamic-<br>movement exercises
 
--   Six different sets of exercise (footbal)\
+-   Six different sets of exercise (football)\
     1 Slow running with dynamic movements\
     2 Strength - plyometrics and balance (10 min)\
     3 Speed running specific to football<br> (sudden changes/direction/agility)
@@ -1111,35 +1122,10 @@ The risk of severe injuries, overuse injuries, and injuries overall was reduced 
 
 :::
 
-## Passive Warm-Up
-
--   Not commonly used
-
--   Seems to only be a meaningful advantage to *maintain* an elevated
-    body temperature (achieved by active movements) throughout the
-    transition phase
-
-::: notes
-- transition phase is the time window during competition where you will wait for your start time point where you can't do any specific exercise (i.e call room in field and track competition)
-
-
-:::
-
-
-## Warm-up - Summary
-
-1\. There is recommendations for injury prevention strategies in military personnel\
-    - Knowledge and supervision (training plan - volume and  warming up strategy)\
-    - Physical fitness
-
-2\. RAMP-method\
-    - Raise - Activate - Potentiate
-
-
 
 # Warm-up For Injury Prevention
 
-### Throwing athlete
+### The throwing athlete
 
 
 ## Implementation of warm-up - The throwing athlete {.smaller}
@@ -1213,8 +1199,8 @@ The risk of severe injuries, overuse injuries, and injuries overall was reduced 
 :::
 
 ::: {.fragment fragment-index=4 .fade-in-then-semi-out}
--   Which avoids stress on the anterior capsule laxitiy and stress on
-    bicpes brachii tendon (long head)
+-   Which avoids stress on the anterior capsule laxity and stress on
+    m.bicpes brachii tendon (long head)
 :::
 
 [@mayes_2022]
@@ -1260,14 +1246,40 @@ The risk of severe injuries, overuse injuries, and injuries overall was reduced 
 
 How does a proper warm-up session look like for an throwing athlete
 
--   Prevent pain and injury
-
 -   Program should encompass
 
-    -   thoracic spoine mobility exercises
+    -   thoracic spine mobility exercises
     -   facilitate shoulder stabilizers trapezius, rotator cuff muscles,
         scapula stabilizers (m. trapezius)
     -   warm-up reduces risk on injury in all phases of a throw
+
+
+
+## Passive Warm-Up
+
+-   Not commonly used
+
+-   Seems to only be a meaningful advantage to *maintain* an elevated
+    body temperature (achieved by active movements) throughout the
+    transition phase
+
+::: notes
+- transition phase is the time window during competition where you will wait for your start time point where you can't do any specific exercise (i.e call room in field and track competition)
+
+
+:::
+
+# Summary 
+
+## Summary of injury prevention strategies
+
+1\. There is recommendations for injury prevention strategies in military personnel\
+    - Knowledge and supervision (training plan - volume and  warming up strategy)\
+    - Physical fitness
+
+2\. Warm-up using the RAMP-method\
+    - Raise - Activate - Potentiate
+
 
 
 # Warm-up and the link to performance
@@ -1498,18 +1510,25 @@ between actin and myosin proteins in the muscle cell**.
 
 -   Education of military leaders:
     -   Training load and intensity planing (total training load)\
-    -   Resistance training
+    -   Progression in training load
+    
 -   Warm-up strategies
     -   Injury
     -   Improve performance
--   Mobility exercises?
+    
 
 ::: notes
-Start with a case, problem,\
-Set the stage\
-And ask how would the students think of this in the light of this
-lecture, alternative, illustrate how experts in this field would think
-about it
+
+I want to highlight two or three key takeaways from this lecture that, as a future leader of military personnel, you need to be aware of in order to help prevent injuries among your soldiers.
+
+First, it's crucial to have a structured training plan that considers the total training load your soldiers are exposed to—both during their education and in active service. This helps reduce the risk of overuse injuries and failed physical adaptation. The plan should be adjusted to reflect the actual stressors they face in their daily tasks. In other words, make sure the volume, intensity, and frequency of training match what their bodies can handle—especially during demanding periods.
+
+Second, gradual progression in training is key—especially for new recruits who may not be very fit when they join. Pushing them too hard, too fast is a fast track to injury. Building up their load steadily gives their bodies time to adapt safely.
+
+Third, make structured warm-up sessions a regular part of their weekly training routine, all year round. Warm-ups are not just about preventing injury—they also help improve performance in the training that follows.
+
+To sum up: be smart with load, progress gradually, and never skip the warm-up. These simple principles go a long way in keeping your soldiers healthy and mission-ready.
+
 :::
 
 ## Assignment for residental stay

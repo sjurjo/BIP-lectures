@@ -24,6 +24,25 @@ editor_options:
   chunk_output_type: console
 ---
 
+# The in classrom lecture
+
+## Outline
+
+- question
+
+- recap some key points from virtual component - add some new aspects
+
+  - guidelines
+  
+  - *how is a typical training session look like in your academy? get together and discuss?*
+  
+  - present your warm-up programs to the forum with reflection (send in your presentation in advance, 5 min).
+  
+
+
+- Today one academy will execute the warm up program for us and we will follow it as planned.
+
+
 
 
 
@@ -35,11 +54,18 @@ Start the lecture with a question or case.
     military service?
 
     -   Use two minutes to discuss with your fellow cadet
+    
+    
+## RAMP-method
+
+- Describe?
 
 
-## Armed forces injury prevention {visibility="hidden"}
+## Startegies to prevent injuries in military personnel {visibility="hidden"}
 
-### Startegies to prevent injuries in military personnel
+
+- Recap strategies?
+
 
 1\. Education of military leaders
 
@@ -47,9 +73,8 @@ Start the lecture with a question or case.
 - individualized training program - train smarter? reduce training
 volume while maintaining physical fitness and reduce injury rates
 
-3\. Warm-up strategies
+3\. Warm-up strategies (prevet injury and performance)
 
-4\.
 
 ![](images/mili-lec.jpg){.absolute bottom="0" right="-50" height="250"}
 
