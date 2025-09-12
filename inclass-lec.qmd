@@ -68,9 +68,9 @@ Today:
 ![](images/wu1.png)
 
 
-::: {.fragment .absolute right=30 bottom=40}
+::: {.fragment .absolute right=20 bottom=40}
 
-- Exited for your warm-up programs!
+- Excited for your warm-up programs!
 
 :::
 

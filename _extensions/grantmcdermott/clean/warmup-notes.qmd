@@ -1,29 +1,11 @@
 ---
-title: "Feedback notes"
+title: "warmup-notes to presentations"
 format: html
 ---
 
+### Overall impression_
 
-
-
-## Bulgarian cadets fee
-
-### Introduction/background
-  - Great to set the context of the warm up and relate it to theory.
-  - Any idea what is the most predominately injury in the military? and what causes it? (over use injuries, total training load)
-
-### Specific warm-up: 
-    
-    - Could it be an advantage to include short sprints with higher intensities towards the end of 
-    the specific part? With the aim to set the oxygen deliviery system working?
-      - From theory this could delay use of fast energy storage - and instead have this extra fuel 
-      source available towards the finish line?
-      
-      
-
-
-### Conclusion
-- Do you perform warm-up regularly or is it not prioritized?
+### Specific
 
 
 
@@ -110,3 +92,4 @@ I got the general to specific warm-up, but a little more detailed would be an ad
 
 
 ## Romania
+
