@@ -1,6 +1,6 @@
 ---
-title: "The Art of Warming Up - In class"
-subtitle: Military Pentathlon Jørstadmoen 2025
+title: "Military Pentathlon Jørstadmoen 2025"
+subtitle: WELCOME CADETS'
 format: clean-revealjs
 theme: sky
 logo: images/double-logo.png
@@ -30,18 +30,57 @@ library(tidyverse)
 library(ggplot2)
 ```
 
-## Warming-up sessions
 
-Today:
+## Learning pathway {.smaller}
+
+::: {.fragment .semi-fade-out}
+
+  -  From theory into practice **(1)**  
+     - Learning platform
+     - Cadet led warm-up sessions
+
+:::
+
+
+::: {.fragment .fade-in-then-semi-out}
+ - Military pentathlon and military working demands **(2: theory)**  
+       - Working demands in the military context  
+       - Deployment - operations  
+       - Challenges  
+       - Training strategies     
+
+:::
+    
+::: {.fragment .fade-in-then-semi-out}
+ - Workshop **(3: discussion - reflection - practical)**  
+      - Working with your working demands  
+      - Test fitness vs. functional fitness  
+
+:::
+
+::: {.fragment .fade-in-then-semi-out}    
+ - Optimizing performance **(4: theory)**    
+        - Elaborate upon training methods  
+        - Concurrent training
+        - And more...  
+:::
+
+
+
+# The Art of Warming Up - In class
+
+## Today Warming-up session
+
+### From theory into practice **(1)** 
 
 -   Short recap - Warm-up guidelines
 
 -   Cadet presentations
 
--   First cadet led warm-up session 😀
+-   First cadet led warm-up session outside  😀
 
 ::: fragment
--   Learning outcomes from this module:
+-   Learning outcomes from this warm-up module:
 
     1\. Knowledge of injury prevention strategies for military personnel
 
@@ -295,13 +334,16 @@ One way of structuring an effective warm-up protocol is to follow the RAMP-metho
 
 ## You are our future leaders with PHYSICAL TRAINING COMPETANCE
 
--   [Education of military leaders!]{.fg style="--col: purple"}
+-   [Education of military leaders is essential!]{.fg style="--col: purple"}
 
 -   Key training principles:
 
     -   Knowledge of training load and intensity planing (i.e. total training load)
-    -   Progression of training load
+    -   Progression of training load and volume
     -   Variation - methodology
+<br>
+<br>
+[Your knowledge]{.fg style="--col: purple"} of risk factors and training will contribute to reduce injury prevalence in the military!
 
 ::: notes
 -   Total training load is a key factor for the soldier to adjust related to your training status, school activities, balance between load and restitution,
@@ -310,21 +352,21 @@ One way of structuring an effective warm-up protocol is to follow the RAMP-metho
 
 -   Variation in methodology, training variation, reduce monotony and overuse injuries, adaptations...
 
-
+- Knowing risk factors and education of training in the military has shown to reduce injury prevalence of 35%
 
 :::
 
 # Presentations Academies
 
 
-| Academy     | Exercise | 
-|:------------|:---------|
-| Bulgaria    | Obstacle course |
-| Greece      | Grenade throw  |  
-| Slovakia    | Obstacle swimming |
-| Romania     | Obstacle course |
+| Academy     | Exercise | Day of warm-up (practice)    |
+|:------------|:---------|------------:|
+| Bulgaria    | Obstacle course | Later today |
+| Greece      | Grenade throw  |  Sunday |
+| Slovakia    | Obstacle swimming | Wedensday |
+| Romania     | Obstacle course | Wedensday |
 
-: Warm-up program {.striped .hover}
+: Warm-up programs {.striped .hover}
 
 
 

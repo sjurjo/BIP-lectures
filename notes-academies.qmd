@@ -4,13 +4,53 @@ format: html
 ---
 
 
+## Bulgaria
+
+### Overall impression
+
+Overall impression that you have used the background theory from the video lecture in preparing your program, and also spend some time reflecting on the program and exercises you have implemented to prepare the soldier for the following exercise, obstacle course...
 
 
-## Bulgarian cadets fee
+-  Any idea what is the most predominately injury in the military? and what causes it? (over use injuries, total training load)
 
-### Introduction/background
-  - Great to set the context of the warm up and relate it to theory.
-  - Any idea what is the most predominately injury in the military? and what causes it? (over use injuries, total training load)
+### Specific
+ Three overall physiologocal aspects is mentioned - givining me the impression that you have digged a little bit into the theoretical background..
+ 
+- Mechanisms: 
+    - Increased power output, as the rate of force development improves as the cross-bridge in cycling become more efficient...
+
+
+
+Question: 
+What needs to be coordinated? 
+    - Nervous system will be activated more efficiently, by coordination between synergist (muscles working better together) and activation pattern between agonist and antagonists....
+    - This is important for example improving working economy, or improved power output...
+
+
+- Temerature and circulation? why?: energy system speeds up and the muscles can generate energy faster and more effectively.. cross briding.....
+    - Important for performance and injury prevention purposes..
+
+
+
+Structure: 
+
+I see a clear structure of the warm-up principles - general to being a more specific muscle activation and simulation training of some obstacles in the end of the warm up phase..
+
+General:  
+
+- I have one question, what do you think of the intensity during the exercise - will it be high effort during the whole specific part?  
+
+- Risk of fatigue and accumulation of lacate with high effort / intensity during the specific part (20min) if the volume is to high..  
+
+- What is the intensity of the jumping exercise- submaximal intensity reduces risk of accumulation of lactate...  
+
+- Can be adjusted during the session as well, if you realize its to hard?   
+
+
+To consider for next time:
+- Getting some progression in intensity towards the end of warm-up to take advantage of the elevated cardiorespiratory system and hence sparing the anaerobic system for the real competition (performance) can be implemented
+
+
 
 ### Specific warm-up: 
     
@@ -19,41 +59,14 @@ format: html
       - From theory this could delay use of fast energy storage - and instead have this extra fuel 
       source available towards the finish line?
       
-      
-
-
 ### Conclusion
+
 - Do you perform warm-up regularly or is it not prioritized?
 
+- What equipment do you need afterwards outside..?
 
 
-## Bulgaria
-
-### Overall impression
-
-Overall impression that you have used the background theory from the video lecture in preparing your program, and also spend some time reflecting on the program and exercises you have implemented to prepare the soldier for the following exercise, obstacle course...
-
-
-### Specific
- Three overall physiologocal aspects is mentioned - givining me the impression that you have digged a little bit into the theoretical background..
- 
-- Mechanisms: 
-    - Increased power output, as the rate of force development improves as the cross-bridge in cycling become more efficient...
-
-- Nervous system through coordination between synergist and agonists/antagonist....
-
-
-Question: what needs to be coordinated? 
-- Temerature and circulation? why?: energy system speeds up and the muscles can generate energy faster and more effectively.. cross briding.. 
-    - Important for performance and injury prevention purposes..
-
-
-
-To consider for next time:
-- Getting some progression in intensity towards the end of warm-up to take advantage of the elevated cardiorespiratory system and hence sparing the anaerobic system for the real competition (performance) can be implemented
-
-
-Overall great set up..
+Overall great set up.
 
 
 --------
@@ -72,12 +85,16 @@ Overall great set up..
 
 - Why is torso mobilization so of importance for the throwing movement? 
     - Injury? Performance?
-    - Reduce stress on the shoulder joint and anterior stress..
+    - Reduce stress on the shoulder joint and especial the anterior stress of the shoulder..
+    
     
 - Muscle activation: anterior / posterior shoulder muscles?
     - Late phase de-accelration phase - so in a training program it should be at least 60% of the internal rotation strength to reduce risk of getting injured....
     
+    - Both directions - concentric and eccentric movements to activate muscle activation patterns...
     
+    
+
 - Could it be included the whole kinetic-chain? for more specific warm up....    
 
 - In this turn; include in- run for even more specific for the following event?     
@@ -88,10 +105,11 @@ Overall great set up..
 
 ## Slovakia
 
-### Overall impression_
+### Overall impression
 
-Easy to follow you presentation. Theoretical background - nice summarizing key purposes for each step in the RAMP-method...
+Easy to follow you presentation. Theoretical background - nice summarizing key purposes for each step in the RAMP-method..
 
+I like that...
 
 
 
@@ -100,7 +118,10 @@ Easy to follow you presentation. Theoretical background - nice summarizing key p
 
 I got the general to specific warm-up, but a little more detailed would be an advantage to consider the volume and intensity of the exercises you uses......
 
-- Could you elaborate a little more into intensity they should be performing at?
+- In terms of repetitions and sets - rest length ect...  
+
+
+- Could you elaborate a little more into intensity they should be performing at? This also set the length of the transition phase... Small break before main session...
 
 - Even more like - sprints in the water or dry land?
 
@@ -110,3 +131,39 @@ I got the general to specific warm-up, but a little more detailed would be an ad
 
 
 ## Romania
+
+### Overall impression
+
+- I see you watched the video lecture and included it into the presentation, very good. 
+- You have general start of the warm up before getting more specific - movement specific drills..
+
+-What do you think about the time used at the general vs. specific part..?
+
+
+### Specific
+
+- What do you think about intensity in the specific part of your warm-up program? 
+
+
+Final last slide;
+-  How do you monitor intensity and loading to not fatigue cadets..?
+    - Some information of sets and repetitions would be nice...
+  
+  - Then you at least know something about total volume - regarding keeping the total training load not to high to reduce risk of fatigue..?
+
+
+
+
+Last slide: mental readiness, yes, could we tried out some of the obstacles? What do you usually do?
+    - You are simulating the obstactels - could we do it more specific trying some of the obstaceles with lower intensity?   
+
+How do you plan to adjust for varying fitness levels in the exercises? (someone dedicated to adjust people, avaible equipment, alternative exercises?).
+
+
+
+
+
+
+
+
+
