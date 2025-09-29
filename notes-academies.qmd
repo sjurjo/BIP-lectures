@@ -1,5 +1,5 @@
 ---
-title: "Feedback notes"
+title: "Feedback notes to academies warm-up"
 format: html
 ---
 
@@ -21,7 +21,8 @@ Overall impression that you have used the background theory from the video lectu
 
 
 
-Question: 
+Question:
+
 What needs to be coordinated? 
     - Nervous system will be activated more efficiently, by coordination between synergist (muscles working better together) and activation pattern between agonist and antagonists....
     - This is important for example improving working economy, or improved power output...

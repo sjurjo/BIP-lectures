@@ -362,9 +362,11 @@ One way of structuring an effective warm-up protocol is to follow the RAMP-metho
 | Academy     | Exercise | Day of warm-up (practice)    |
 |:------------|:---------|------------:|
 | Bulgaria    | Obstacle course | Later today |
+| Slovakia    | Obstacle swimming | Sunday |
 | Greece      | Grenade throw  |  Sunday |
-| Slovakia    | Obstacle swimming | Wedensday |
-| Romania     | Obstacle course | Wedensday |
+| Romania     | Obstacle course | Monday |
+
+
 
 : Warm-up programs {.striped .hover}
 
